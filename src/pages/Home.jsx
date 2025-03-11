@@ -121,7 +121,7 @@ function Home() {
             >
               <img
                 src="/images/clouds_no_logo.png"
-                alt="Aidan's site logo"
+                alt="A cityscape above the clouds with a blue background"
                 className="art_img"
               />
             </a>
@@ -135,7 +135,7 @@ function Home() {
             >
               <img
                 src="/images/dawn.jpg"
-                alt="Aidan's site logo"
+                alt="A neon cityscape in Tokyo at dawn with a purple background"
                 className="art_img"
               />
             </a>
@@ -149,7 +149,7 @@ function Home() {
             >
               <img
                 src="/images/time.png"
-                alt="Aidan's site logo"
+                alt="A clock with wings and a light blue background filled with clocks"
                 className="art_img"
               />
             </a>

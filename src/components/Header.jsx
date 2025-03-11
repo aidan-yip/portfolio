@@ -8,9 +8,11 @@ function Header() {
   function ToggleMenu() {
     if (menuOpen) {
       document.querySelector("nav").style.opacity = "0";
+      document.querySelector("nav").style.pointerEvents = "none";
       setMenuOpen(false);
     } else {
       document.querySelector("nav").style.opacity = "1";
+      document.querySelector("nav").style.pointerEvents = "all";
       setMenuOpen(true);
     }
   }
@@ -81,14 +83,14 @@ function Header() {
             className="social_logo"
             style={{ cursor: "pointer" }}
           >
-            <img src="/icons/InBug-White.png" />
+            <img src="/icons/InBug-White.png" alt="Visit LinkedIn"/>
           </a>
           <a
             href="https://github.com/aidan-yip"
             className="social_logo"
             style={{ cursor: "pointer" }}
           >
-            <img src="/icons/github-mark-white.svg" />
+            <img src="/icons/github-mark-white.svg" alt="Visit GitHub"/>
           </a>
         </div>
       </nav>

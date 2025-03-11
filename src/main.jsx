@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Scroll_To_Section />
       <Header />
-      <CursorifyProvider>
+      <CursorifyProvider breakpoint={997}>
         <main id="maincontent">
           <App />
         </main>

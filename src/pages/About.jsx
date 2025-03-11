@@ -28,6 +28,27 @@ function About() {
           </article>
         </div>
       </section>
+      <section className="section" id="skills_section">
+      <article className="text_container">
+          <p id="about_bio">
+            I am a Front-End Developer and Designer with a passion for creating
+            beautiful and functional websites. I have experience working with
+            HTML, CSS, JavaScript, React, and more. I am constantly learning new
+            skills and technologies to improve my craft.
+          </p>
+        </article>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Git</li>
+        </ul>
+      </section>
     </>
   );
 }

@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
+
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function ToggleMenu() {
+    if (menuOpen) {
+      document.querySelector("nav").style.opacity = "0";
+      setMenuOpen(false);
+    } else {
+      document.querySelector("nav").style.opacity = "1";
+      setMenuOpen(true);
+    }
+  }
+
   return (
     <header>
       <a href="#maincontent" id="skip_to_main">
         Skip to main content
       </a>
-      <nav>
+      <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}></button>
+      <nav aria-expanded={menuOpen}>
         <li>
           <Link
             to="/#hero_section"
@@ -25,6 +40,7 @@ function Header() {
         <li>
           <Link
             to="/"
+            className="navlink"
             style={{ cursor: "pointer" }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
@@ -32,18 +48,27 @@ function Header() {
           </Link>
         </li>
         <li>
-          <Link to="/#works_section" style={{ cursor: "pointer" }}>
+          <Link
+            to="/#works_section"
+            className="navlink"
+            style={{ cursor: "pointer" }}
+          >
             Works
           </Link>
         </li>
         <li>
-          <Link to="/#design_section" style={{ cursor: "pointer" }}>
+          <Link
+            to="/#design_section"
+            className="navlink"
+            style={{ cursor: "pointer" }}
+          >
             Design
           </Link>
         </li>
         <li>
           <Link
             to="/about"
+            className="navlink"
             style={{ cursor: "pointer" }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >

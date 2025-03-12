@@ -30,8 +30,8 @@ function Home() {
           id="site_logo_large"
         />
         <div>
-          <h1 id="hero_header">Hey There, I'm Aidan!</h1>
-          <p id="hero_subheader">Front-End Developer/Designer</p>
+          <h1 id="hero_header" tabIndex={0}>Hey There, I'm Aidan!</h1>
+          <p id="hero_subheader" tabIndex={0}>Front-End Developer/Designer</p>
         </div>
       </section>
 
@@ -167,6 +167,7 @@ function Home() {
               href="/images/style_devices_clear.png"
               className="gallery_open"
               data-fancybox="gallery"
+              style={{ cursor: "pointer" }}
             >
               <img
                 src="/images/style_devices_clear.png"

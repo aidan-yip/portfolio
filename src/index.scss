@@ -48,9 +48,28 @@ main {
   padding: 2rem;
 }
 
+.section_div {
+  width: 100%;
+  max-width: 1480px;
+  padding: 2rem;
+  margin: 0 auto;
+  font-weight: 500;
+  background-color: #181818ba;
+  box-shadow: 0 0 10px 0 #00000099;
+  backdrop-filter: blur(10px);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.text_left {
+  text-align: left;
 }
 
 button {
@@ -71,5 +90,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-// custom styles

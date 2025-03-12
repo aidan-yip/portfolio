@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
 
 function About() {
   useEffect(() => {
     document.title = "About Me";
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -29,25 +29,28 @@ function About() {
         </div>
       </section>
       <section className="section" id="skills_section">
-      <article className="text_container">
-          <p id="about_bio">
-            I am a Front-End Developer and Designer with a passion for creating
-            beautiful and functional websites. I have experience working with
-            HTML, CSS, JavaScript, React, and more. I am constantly learning new
-            skills and technologies to improve my craft.
-          </p>
-        </article>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>MongoDB</li>
-          <li>Git</li>
-        </ul>
+        <div className="section_div skills_div text_left">
+          <article className="skills_text">
+            <p id="about_bio">
+              I am a Front-End Developer and Designer with a passion for
+              creating beautiful and functional websites. I have experience
+              working with HTML, CSS, JavaScript, React, and more. I am
+              constantly learning new skills and technologies to improve my
+              craft.
+            </p>
+          </article>
+          <h2 className="skills_title">Development</h2>
+          <ul className="skills_container">
+            <li className="skill_item">HTML</li>
+            <li className="skill_item">CSS</li>
+            <li className="skill_item">JavaScript</li>
+            <li className="skill_item">React</li>
+            <li className="skill_item">Node.js</li>
+            <li className="skill_item">Express</li>
+            <li className="skill_item">MongoDB</li>
+            <li className="skill_item">Git</li>
+          </ul>
+        </div>
       </section>
     </>
   );

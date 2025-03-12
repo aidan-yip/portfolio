@@ -41,6 +41,7 @@
 
 .about_info {
   width: 100%;
+  max-width: 1480px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -69,6 +70,41 @@
   width: 100%;
   padding: 0rem 0rem;
 }
+
+// skills section
+
+.skills_div {
+  padding: 5rem;
+}
+
+.skills_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.skills_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  padding-left: 0rem;
+  list-style: none;
+}
+
+.skill_item {
+  margin-bottom: 0.8rem;
+  margin-right: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 10rem;
+  background-color: #4483ff;
+}
+
+// desktop
 
 @media screen and (min-width: 50em) {
   .about_info {

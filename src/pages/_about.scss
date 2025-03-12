@@ -39,6 +39,18 @@
 
 // info
 
+.about_container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 3rem auto;
+  background-color: #181818ba;
+  box-shadow: 0 0 10px 0 #00000099;
+  backdrop-filter: blur(10px);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+}
+
 .about_info {
   width: 100%;
   max-width: 1480px;
@@ -52,12 +64,6 @@
   margin-top: 3rem;
   padding: 2.5rem 2rem;
   font-weight: bold;
-  background-color: #181818ba;
-  box-shadow: 0 0 10px 0 #00000099;
-  backdrop-filter: blur(10px);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 2rem;
   transition: all 0.3s;
 }
 
@@ -74,7 +80,7 @@
 // skills section
 
 .skills_div {
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .skills_title {
@@ -90,7 +96,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 3rem;
+  margin-top: 1.4rem;
   padding-left: 0rem;
   list-style: none;
 }
@@ -107,6 +113,10 @@
 // desktop
 
 @media screen and (min-width: 50em) {
+  .about_container {
+    margin-top: 5rem;
+  }
+
   .about_info {
     width: 90%;
     height: auto;
@@ -123,5 +133,9 @@
   .text_container {
     width: 100%;
     padding: 3rem 8rem;
+  }
+
+  .skills_div {
+    padding: 5rem;
   }
 }

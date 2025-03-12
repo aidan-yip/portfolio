@@ -16,6 +16,8 @@ html {
   scroll-behavior: smooth;
 }
 
+// links
+
 a {
   font-weight: 500;
   color: #f2f2f2;
@@ -34,6 +36,8 @@ body {
   min-height: 100vh;
 }
 
+// containers
+
 main {
   display: flex;
   justify-content: center;
@@ -45,7 +49,7 @@ main {
   background: #000000;
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section_div {
@@ -54,14 +58,10 @@ main {
   padding: 2rem;
   margin: 0 auto;
   font-weight: 500;
-  background-color: #181818ba;
-  box-shadow: 0 0 10px 0 #00000099;
-  backdrop-filter: blur(10px);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 2rem;
   transition: all 0.3s;
 }
+
+// Typography
 
 h1 {
   font-size: 3.2em;
@@ -71,6 +71,20 @@ h1 {
 .text_left {
   text-align: left;
 }
+
+.line_height {
+  line-height: 1.7;
+}
+
+.font_bold {
+  font-weight: bold;
+}
+
+.font_500 {
+  font-weight: 500;
+}
+
+// Buttons
 
 button {
   border-radius: 8px;

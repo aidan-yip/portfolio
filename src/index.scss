@@ -84,6 +84,11 @@ h1 {
   font-weight: 500;
 }
 
+.large_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 // Buttons
 
 button {
@@ -103,4 +108,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+// desktop
+
+@media screen and (min-width: 50em) {
+  .section {
+    padding: 2rem;
+  }
 }

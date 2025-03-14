@@ -1,2 +1,16 @@
-@use "_variables" as *;
-@use "_mixins";
+@mixin section_background {
+  background-color: #181818ba;
+  box-shadow: 0 0 10px 0 #00000099;
+  backdrop-filter: blur(10px);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@mixin blue_gradient {
+  background: #052342;
+  background: linear-gradient(
+    0deg,
+    #052342 0%,
+    #020024 100%
+  );
+}

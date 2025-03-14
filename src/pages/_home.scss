@@ -1,3 +1,6 @@
+@import "../styles/_variables";
+@import "../styles/_mixins";
+
 // containers
 
 #hero_section {
@@ -6,12 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #052342;
-  background: linear-gradient(
-    0deg,
-    #052342 0%,
-    #020024 100%
-  );
+  @include blue_gradient;
   margin-top: 0rem;
   padding: 1rem;
   text-align: center;
@@ -72,6 +70,10 @@
 .art_card {
   background-color: #1a1a1a00;
   padding: 0rem;
+}
+
+.art_card:hover {
+  box-shadow: #f2f2f298 0px 0px 30px;
 }
 
 .style_card {

@@ -20,23 +20,24 @@ function About() {
               <h1 id="about_header">Aidan Yip</h1>
               <p id="about_subheader">Front-End Developer/Designer</p>
               <p id="about_bio">
-                I am a Front-End Developer and Designer with a passion for
-                creating beautiful and functional websites. I have experience
-                working with HTML, CSS, JavaScript, React, and more. I am
-                constantly learning new skills and technologies to improve my
-                craft.
+                Front-End Web Developer and Designer with a passion for
+                intuitive user interfaces, my unique background as a Film Intern
+                and Digital Colorist provides me with a distinct advantage in
+                web design. This has instilled a comprehensive understanding of
+                color science and theory.
               </p>
             </article>
           </div>
 
           <div className="section_div skills_div text_left">
             <article className="skills_text">
+              <h2 className="large_title">Design Meets Function.</h2>
               <p className="font_bold line_height">
-                I am a Front-End Developer and Designer with a passion for
-                creating beautiful and functional websites. I have experience
-                working with HTML, CSS, JavaScript, React, and more. I am
-                constantly learning new skills and technologies to improve my
-                craft.
+                I believe websites should be more than just functional, they
+                should bring a sense of joy. Delighting users with a
+                meticulously designed website that pushes the boundaries of what
+                a website should be. When form meets function intuitively, it
+                creates a seamless user experience.
               </p>
             </article>
 
@@ -45,7 +46,7 @@ function About() {
             <ul className="skills_container">
               <li className="skill_item">HTML</li>
               <li className="skill_item">CSS</li>
-              <li className="skill_item">Sass</li>
+              <li className="skill_item">SASS/SCSS</li>
               <li className="skill_item">JavaScript</li>
               <li className="skill_item">React</li>
               <li className="skill_item">PHP</li>
@@ -54,6 +55,7 @@ function About() {
               <li className="skill_item">Shopify</li>
               <li className="skill_item">Git</li>
               <li className="skill_item">GitHub</li>
+              <li className="skill_item">Vite</li>
               <li className="skill_item">Linux</li>
               <li className="skill_item">Ubuntu</li>
             </ul>

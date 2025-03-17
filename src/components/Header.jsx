@@ -17,6 +17,20 @@ function Header() {
     }
   }
 
+  // Mobile browser check for menu toggle
+  function HandleDeviceType() {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      ToggleMenu();
+      console.log("mobile browser");
+    } else {
+      console.log("desktop browser");
+    }
+  }
+
   return (
     <header>
       <a href="#maincontent" id="skip_to_main">
@@ -29,13 +43,20 @@ function Header() {
             to="/#hero_section"
             className="site_logo_link"
             style={{ cursor: "pointer" }}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              HandleDeviceType();
+            }}
           >
             <img
               src="/icons/aidan_logo_clear.svg"
               alt="Aidan's site logo"
               id="site_logo"
               style={{ cursor: "pointer" }}
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                HandleDeviceType();
+              }}
             />
           </Link>
         </li>
@@ -44,7 +65,10 @@ function Header() {
             to="/"
             className="navlink"
             style={{ cursor: "pointer" }}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              HandleDeviceType();
+            }}
           >
             Home
           </Link>
@@ -54,6 +78,7 @@ function Header() {
             to="/#works_section"
             className="navlink"
             style={{ cursor: "pointer" }}
+            onClick={HandleDeviceType}
           >
             Works
           </Link>
@@ -63,6 +88,7 @@ function Header() {
             to="/#design_section"
             className="navlink"
             style={{ cursor: "pointer" }}
+            onClick={HandleDeviceType}
           >
             Design
           </Link>
@@ -72,7 +98,7 @@ function Header() {
             to="/about"
             className="navlink"
             style={{ cursor: "pointer" }}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={HandleDeviceType}
           >
             About
           </Link>
@@ -83,14 +109,14 @@ function Header() {
             className="social_logo"
             style={{ cursor: "pointer" }}
           >
-            <img src="/icons/InBug-White.png" alt="Visit LinkedIn"/>
+            <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
           </a>
           <a
             href="https://github.com/aidan-yip"
             className="social_logo"
             style={{ cursor: "pointer" }}
           >
-            <img src="/icons/github-mark-white.svg" alt="Visit GitHub"/>
+            <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
           </a>
         </div>
       </nav>

@@ -45,11 +45,10 @@ function About() {
               <h1 id="about_header">Aidan Yip</h1>
               <p id="about_subheader">Front-End Developer/Designer</p>
               <p id="about_bio">
-                Front-End Web Developer and Designer with a passion for
-                intuitive user interfaces, my unique background as a Film Intern
-                and Digital Colorist provides me with a distinct advantage in
-                web design. This has instilled a comprehensive understanding of
-                color science and theory.
+                Passionate about creating intuitive user interfaces. My unique
+                background as a Film Intern and Digital Colorist provides me
+                with a distinct advantage in web design and a comprehensive
+                understanding of color science and theory.
               </p>
             </article>
           </div>
@@ -59,8 +58,8 @@ function About() {
               <h2 className="large_title">Design Meets Function.</h2>
               <p className="font_bold line_height">
                 I believe websites should be more than just functional, they
-                should bring a sense of joy and delight. When form meets function intuitively, it
-                creates a seamless user experience.
+                should bring a sense of joy and delight. When form meets
+                function intuitively, it creates a seamless user experience.
               </p>
             </article>
 

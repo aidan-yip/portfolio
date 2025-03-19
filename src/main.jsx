@@ -16,6 +16,8 @@ import "./pages/_about.scss";
 
 // components scss
 import "./styles/_header.scss";
+import "./styles/_works.scss";
+import "./styles/_design.scss";
 
 // components
 import Header from "./components/Header";

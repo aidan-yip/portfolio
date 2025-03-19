@@ -1,37 +1,63 @@
+// react
+import { useEffect, useRef } from "react";
+
 // react router dom
 import { Link } from "react-router-dom";
-
-import "../styles/_works.scss";
-import "../styles/_design.scss";
-import { useEffect } from "react";
 
 // animations
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+// three.js
+import * as THREE from "three";
+
+// vanta.js
+import NET from "vanta/dist/vanta.rings.min";
+
 // fancybox lightbox
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-Fancybox.bind("[data-fancybox]", {
-  });
+Fancybox.bind("[data-fancybox]", {});
 
 function Home() {
   useEffect(() => {
     document.title = "Aidan's Portfolio";
   }, []);
 
+  // vanta net background
+  const vantaRef = useRef(null);
+
+  useEffect(() => {
+    const vantaEffect = NET({
+      el: vantaRef.current,
+      THREE: THREE,
+      mouseControls: true,
+      touchControls: true,
+      color: 0x20d6ff,
+      backgroundColor: 0x22,
+    });
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, []);
+
   return (
     <>
-      <section className="section" id="hero_section">
+      <section className="section" id="hero_section" ref={vantaRef}>
         <img
           src="/images/aidan_logo_clear.svg"
           alt="Aidan's site logo"
           id="site_logo_large"
         />
         <div>
-          <h1 id="hero_header" tabIndex={0}>Hey There, I'm Aidan!</h1>
-          <p id="hero_subheader" tabIndex={0}>Front-End Developer/Designer</p>
+          <h1 id="hero_header" tabIndex={0}>
+            Hey There, I'm Aidan!
+          </h1>
+          <p id="hero_subheader" tabIndex={0}>
+            Front-End Developer/Designer
+          </p>
         </div>
       </section>
 

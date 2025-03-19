@@ -1,4 +1,11 @@
-import React, { useEffect } from "react";
+// react
+import React, { useEffect, useRef } from "react";
+
+// three.js
+import * as THREE from "three";
+
+// vanta.js
+import GLOBE from "vanta/dist/vanta.globe.min";
 
 function About() {
   useEffect(() => {
@@ -6,9 +13,27 @@ function About() {
     window.scrollTo(0, 0);
   }, []);
 
+  // vanta globe background
+  const vantaRef = useRef(null);
+
+  useEffect(() => {
+    const vantaEffect = GLOBE({
+      el: vantaRef.current,
+      THREE: THREE,
+      mouseControls: true,
+      touchControls: true,
+      color: 0x44d5ff,
+      backgroundColor: 0x22,
+    });
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, []);
+
   return (
     <>
-      <section className="section" id="about_section">
+      <section className="section" id="about_section" ref={vantaRef}>
         <div className="about_container">
           <div className="about_info">
             <img
@@ -34,9 +59,7 @@ function About() {
               <h2 className="large_title">Design Meets Function.</h2>
               <p className="font_bold line_height">
                 I believe websites should be more than just functional, they
-                should bring a sense of joy. Delighting users with a
-                meticulously designed website that pushes the boundaries of what
-                a website should be. When form meets function intuitively, it
+                should bring a sense of joy and delight. When form meets function intuitively, it
                 creates a seamless user experience.
               </p>
             </article>

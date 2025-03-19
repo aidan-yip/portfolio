@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.vanta-canvas {
+  opacity: 0.6;
+}
+
 .project_grid {
   width: 100%;
   max-width: 1480px;
@@ -148,15 +152,17 @@
 
 #hero_header {
   color: #f2f2f2;
+  text-shadow: 0 0 25px #ffffffcd;
   margin-top: -4rem;
-  font-size: 2.5em;
+  font-size: 3em;
   line-height: 1.1;
 }
 
 #hero_subheader {
   color: #f2f2f2;
+  text-shadow: 0 0 25px #ffffffcd;
   margin-top: 1rem;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
   line-height: 1.1;
 }

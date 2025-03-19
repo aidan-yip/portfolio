@@ -1,5 +1,5 @@
-@import "../styles/_variables";
-@import "../styles/_mixins";
+@use "../styles/_variables";
+@use "../styles/_mixins";
 
 header {
   position: fixed;
@@ -16,7 +16,7 @@ nav {
   opacity: 0;
   display: flex;
   width: 100%;
-  max-width: 1480px;
+  max-width: variables.$max_width;
   flex-direction: column;
   justify-content: space-between;
   align-items: left;

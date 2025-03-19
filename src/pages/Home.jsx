@@ -25,7 +25,7 @@ function Home() {
     document.title = "Aidan's Portfolio";
   }, []);
 
-  // vanta net background
+  // vanta rings background
   const vantaRef = useRef(null);
 
   useEffect(() => {
@@ -36,6 +36,7 @@ function Home() {
       touchControls: true,
       color: 0x20d6ff,
       backgroundColor: 0x22,
+      vertexColors: THREE.VertexColors,
     });
 
     return () => {

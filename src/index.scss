@@ -1,3 +1,6 @@
+@use "./styles/_variables";
+@use "./styles/_mixins";
+
 :root {
   font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -54,7 +57,7 @@ main {
 
 .section_div {
   width: 100%;
-  max-width: 1480px;
+  max-width: variables.$max_width;
   padding: 2rem;
   margin: 0 auto;
   font-weight: 500;

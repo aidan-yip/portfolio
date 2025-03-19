@@ -13,7 +13,7 @@ AOS.init();
 import * as THREE from "three";
 
 // vanta.js
-import NET from "vanta/dist/vanta.rings.min";
+import RINGS from "vanta/dist/vanta.rings.min";
 
 // fancybox lightbox
 import { Fancybox } from "@fancyapps/ui";
@@ -29,7 +29,7 @@ function Home() {
   const vantaRef = useRef(null);
 
   useEffect(() => {
-    const vantaEffect = NET({
+    const vantaEffect = RINGS({
       el: vantaRef.current,
       THREE: THREE,
       mouseControls: true,

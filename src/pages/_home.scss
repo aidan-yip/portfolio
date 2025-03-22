@@ -140,12 +140,16 @@
   border-radius: 3rem;
   padding: 0.5rem 0.7rem;
   margin-bottom: 2rem;
+  font-weight: bold;
   color: #f2f2f2;
   background-color: #4483ff;
+  transition: 0.4s;
 }
 
 .project_link:hover {
-  background-color: #1761e0;
+  background-color: #f2f2f2;
+  color: #4483ff;
+  box-shadow: #4483ff 0px 0px 30px;
 }
 
 // hero section

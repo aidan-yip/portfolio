@@ -84,12 +84,13 @@
 }
 
 .art_card {
-  background-color: #1a1a1a00;
+  height: 97%;
+  background-color: none;
   padding: 0rem;
 }
 
 .art_card:hover {
-  box-shadow: #f2f2f262 0px 0px 30px;
+  filter: brightness(1.1);
 }
 
 .style_card {

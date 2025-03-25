@@ -72,8 +72,9 @@ function Home() {
           data-aos-once="false"
         >
           <div className="grid_card">
+            <h2 className="project_title">Eclipse</h2>
             <img
-              src="/images/aidan_logo_clear.svg"
+              src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
@@ -86,8 +87,9 @@ function Home() {
             </Link>
           </div>
           <div className="grid_card">
+            <h2 className="project_title">Ocean Clip</h2>
             <img
-              src="/images/aidan_logo_clear.svg"
+              src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
@@ -99,9 +101,10 @@ function Home() {
               Learn More
             </Link>
           </div>
-          <div className="grid_card">
+          <div className="grid_card span_2">
+            <h2 className="project_title">Woo Store</h2>
             <img
-              src="/images/aidan_logo_clear.svg"
+              src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
@@ -111,20 +114,6 @@ function Home() {
               style={{ cursor: "pointer" }}
             >
               Learn More
-            </Link>
-          </div>
-          <div className="grid_card">
-            <img
-              src="/images/aidan_logo_clear.svg"
-              alt="Aidan's site logo"
-              className="project_img"
-            />
-            <Link
-              to="/work"
-              className="project_link"
-              style={{ cursor: "pointer" }}
-            >
-              More Works
             </Link>
           </div>
         </div>

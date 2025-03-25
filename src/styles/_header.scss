@@ -72,7 +72,7 @@ nav {
 #skip_to_main {
   z-index: 1000;
   top: 0;
-  left: 0;
+  left: 1rem;
   position: absolute;
   padding: 1rem;
   background-color: #1b1b1b;
@@ -108,7 +108,7 @@ nav {
 
 // desktop
 
-@media (min-width: 80em) {
+@media (min-width: 40em) {
   header {
     top: 0.7rem;
   }
@@ -123,7 +123,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 20rem;
+    padding: 0.5rem 17%;
     border-radius: 1rem;
     gap: 0rem;
   }

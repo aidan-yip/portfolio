@@ -95,7 +95,7 @@ function Header() {
         </li>
         <li>
           <Link
-            to="/about"
+            to="/about/#maincontent"
             className="navlink"
             style={{ cursor: "pointer" }}
             onClick={HandleDeviceType}

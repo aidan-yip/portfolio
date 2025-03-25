@@ -72,12 +72,12 @@ function Home() {
           data-aos-once="false"
         >
           <div className="grid_card">
-            <h2 className="project_title">Eclipse</h2>
             <img
               src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
+            <h2 className="project_title">Eclipse</h2>
             <Link
               to="/work"
               className="project_link"
@@ -87,12 +87,12 @@ function Home() {
             </Link>
           </div>
           <div className="grid_card">
-            <h2 className="project_title">Ocean Clip</h2>
             <img
               src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
+            <h2 className="project_title">Ocean Clip</h2>
             <Link
               to="/work"
               className="project_link"
@@ -102,12 +102,12 @@ function Home() {
             </Link>
           </div>
           <div className="grid_card span_2">
-            <h2 className="project_title">Woo Store</h2>
             <img
               src="/images/imac_test.png"
               alt="Aidan's site logo"
               className="project_img"
             />
+            <h2 className="project_title">Woo Store</h2>
             <Link
               to="/work"
               className="project_link"

@@ -6,6 +6,7 @@
 .project_title {
   font-weight: 800;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 // containers
@@ -27,8 +28,6 @@
 
 .vanta-canvas {
   opacity: 0.6;
-  border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
 }
 
 .project_grid {
@@ -87,10 +86,6 @@
   height: 97%;
   background-color: none;
   padding: 0rem;
-}
-
-.art_card:hover {
-  filter: brightness(1.1);
 }
 
 .style_card {
@@ -152,7 +147,7 @@
   font-size: 1rem;
   font-weight: medium;
   border-radius: 3rem;
-  padding: 0.5rem 0.7rem;
+  padding: 0.6rem 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
   color: #f2f2f2;
@@ -228,7 +223,7 @@
 
   .project_link {
     font-size: 1rem;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.7rem;
   }
 
   .style_img {

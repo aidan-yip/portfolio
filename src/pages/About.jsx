@@ -44,6 +44,22 @@ function About() {
             <article className="text_container">
               <h1 id="about_header">Aidan Yip</h1>
               <p id="about_subheader">Front-End Developer/Designer</p>
+              <div id="social_links">
+                <a
+                  href="https://www.linkedin.com/in/aidan-yip"
+                  className="social_logo"
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
+                </a>
+                <a
+                  href="https://github.com/aidan-yip"
+                  className="social_logo"
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
+                </a>
+              </div>
               <p id="about_bio">
                 Passionate about creating intuitive user interfaces. My unique
                 background as a Film Intern and Digital Colorist provides me

@@ -1,5 +1,5 @@
 # Portfolio
 
-## Created with React, Vite, Sass and Three.js
+## Headless CMS created with React, Vite, Sass, Three.js and Contentful
 
-[![My Skills](https://skillicons.dev/icons?i=react,vite,sass,threejs)](https://github.com/aidan-yip)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=react,vite,sass,threejs,contentful&theme=dark)

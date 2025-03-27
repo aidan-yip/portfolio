@@ -1,2 +1,68 @@
 @use "../styles/_variables";
 @use "../styles/_mixins";
+
+// typography
+
+.work_title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+// section/containers
+
+.work_background {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include mixins.blue_gradient;
+}
+
+.work_container {
+  width: 100%;
+  max-width: variables.$max_width;
+  padding: 2rem;
+  margin: 3rem auto;
+  @include mixins.section_background;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+.work_text_container {
+  width: 100%;
+  padding: 0rem 0rem;
+  margin: 2rem 0rem;
+}
+
+// images
+
+.work_image {
+  width: 100%;
+  height: auto;
+  padding: 0rem;
+  border-radius: 1rem;
+}
+
+// desktop
+
+@media screen and (min-width: 50em) {
+  .work_title {
+    text-align: left;
+  }
+
+  .work_container {
+    margin-top: 5rem;
+    padding: 4rem;
+  }
+
+  .work_text_container {
+    padding: 0rem 10rem;
+  }
+
+  .work_image {
+    padding: 0rem 20%;
+  }
+}

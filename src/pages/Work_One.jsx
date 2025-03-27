@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // Contentful CMS
 import { client } from "../utilities/contentfulClient";
-import {
-  CONTENTFUL_ENTRY_ID,
-  WORK_IMAGE_1_ID,
-} from "../globals/globals";
+import { CONTENTFUL_ENTRY_ID_1, WORK_IMAGE_1_ID } from "../globals/globals";
 
 function Work_One() {
   // text assets
@@ -14,40 +11,51 @@ function Work_One() {
   const [workDesignInfo1, setWorkDesignInfo1] = useState("Loading...");
   // image assets
   const [workImage1, setWorkImage1] = useState(null);
-
-  console.log("workImage1", workImage1);
+  const [workImage1Alt, setWorkImage1Alt] = useState("Loading...");
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { fields } = await client.getEntry(CONTENTFUL_ENTRY_ID);
+    const fetchData = () => {
+      client.getEntry(CONTENTFUL_ENTRY_ID_1)
+      .then(({ fields }) => {
         setWorkTitle1(fields.workTitle);
         setWorkDevInfo1(fields.workDevInfo);
         setWorkDesignInfo1(fields.workDesignInfo);
-        const asset = await client.getAsset(WORK_IMAGE_1_ID);
+        return client.getAsset(WORK_IMAGE_1_ID);
+      })
+      .then((asset) => {
         setWorkImage1(asset.fields.file.url);
-      } catch (error) {
+        setWorkImage1Alt(asset.fields.description);
+      })
+      .catch((error) => {
         console.error("Error fetching data:", error);
         setWorkTitle1("Error loading data");
         setWorkDevInfo1("Error loading data");
         setWorkDesignInfo1("Error loading data");
-      }
+        setWorkImage1Alt("Error loading data");
+      });
     };
     fetchData();
   }, []);
 
+  console.log("workImage1", workImage1);
+  console.log("workImage1Alt", workImage1Alt);
+
   return (
-    <div>
-      <>
+    <section className="section work_background">
+      <article className="work_container">
         <img
           src={workImage1}
-          alt="Work Image 1"
+          alt={workImage1Alt}
+          className="work_image"
+          tabIndex={0}
         />
-        <h2>{workTitle1}</h2>
-        <p>{workDevInfo1}</p>
-        <p>{workDesignInfo1}</p>
-      </>
-    </div>
+        <div className="work_text_container">
+          <h2 className="work_title" tabIndex={0}>{workTitle1}</h2>
+          <p tabIndex={0}>{workDevInfo1}</p>
+          <p tabIndex={0}>{workDesignInfo1}</p>
+        </div>
+      </article>
+    </section>
   );
 }
 

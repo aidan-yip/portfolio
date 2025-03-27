@@ -5,8 +5,11 @@
 
 .work_title {
   font-size: 3rem;
-  font-weight: 700;
   text-align: center;
+}
+
+.work_info {
+  font-weight: bold;
 }
 
 // section/containers
@@ -44,6 +47,7 @@
   height: auto;
   padding: 0rem;
   border-radius: 1rem;
+  pointer-events: none;
 }
 
 // desktop

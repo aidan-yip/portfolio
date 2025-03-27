@@ -15,24 +15,25 @@ function Work_One() {
 
   useEffect(() => {
     const fetchData = () => {
-      client.getEntry(CONTENTFUL_ENTRY_ID_1)
-      .then(({ fields }) => {
-        setWorkTitle1(fields.workTitle);
-        setWorkDevInfo1(fields.workDevInfo);
-        setWorkDesignInfo1(fields.workDesignInfo);
-        return client.getAsset(WORK_IMAGE_1_ID);
-      })
-      .then((asset) => {
-        setWorkImage1(asset.fields.file.url);
-        setWorkImage1Alt(asset.fields.description);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-        setWorkTitle1("Error loading data");
-        setWorkDevInfo1("Error loading data");
-        setWorkDesignInfo1("Error loading data");
-        setWorkImage1Alt("Error loading data");
-      });
+      client
+        .getEntry(CONTENTFUL_ENTRY_ID_1)
+        .then(({ fields }) => {
+          setWorkTitle1(fields.workTitle);
+          setWorkDevInfo1(fields.workDevInfo);
+          setWorkDesignInfo1(fields.workDesignInfo);
+          return client.getAsset(WORK_IMAGE_1_ID);
+        })
+        .then((asset) => {
+          setWorkImage1(asset.fields.file.url);
+          setWorkImage1Alt(asset.fields.description);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+          setWorkTitle1("Error loading data");
+          setWorkDevInfo1("Error loading data");
+          setWorkDesignInfo1("Error loading data");
+          setWorkImage1Alt("Error loading data");
+        });
     };
     fetchData();
   }, []);
@@ -50,9 +51,15 @@ function Work_One() {
           tabIndex={0}
         />
         <div className="work_text_container">
-          <h2 className="work_title" tabIndex={0}>{workTitle1}</h2>
-          <p tabIndex={0}>{workDevInfo1}</p>
-          <p tabIndex={0}>{workDesignInfo1}</p>
+          <h2 className="work_title" tabIndex={0}>
+            {workTitle1}
+          </h2>
+          <p className="work_info" tabIndex={0}>
+            {workDevInfo1}
+          </p>
+          <p className="work_info" tabIndex={0}>
+            {workDesignInfo1}
+          </p>
         </div>
       </article>
     </section>

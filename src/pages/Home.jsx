@@ -48,7 +48,7 @@ function Home() {
     <>
       <section className="section" id="hero_section" ref={vantaRef}>
         <img
-          src="/images/aidan_logo_clear.svg"
+          src="/icons/aidan_logo_clear.svg"
           alt="Aidan's site logo"
           id="site_logo_large"
         />

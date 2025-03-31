@@ -21,9 +21,11 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 Fancybox.bind("[data-fancybox]", {});
 
 // contentful CMS
-import { getWorkOne } from "../utilities/contentfulClient";
-import { getWorkTwo } from "../utilities/contentfulClient";
-import { getWorkThree } from "../utilities/contentfulClient";
+import {
+  getWorkOne,
+  getWorkTwo,
+  getWorkThree,
+} from "../utilities/contentfulClient";
 
 function Home() {
   // contentful state

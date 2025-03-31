@@ -18,6 +18,7 @@ import "./pages/_about.scss";
 import "./styles/_header.scss";
 import "./styles/_works.scss";
 import "./styles/_design.scss";
+import "./styles/_page_not_found.scss";
 
 // components
 import Header from "./components/Header";

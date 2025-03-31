@@ -54,6 +54,7 @@ function getWorkOne() {
           setWorkTitle1("Error loading data");
           setWorkDevInfo1("Error loading data");
           setWorkDesignInfo1("Error loading data");
+          setWorkImage1("/images/imac_404.png");
           setWorkImage1Alt("Error loading data");
         });
     };
@@ -100,6 +101,7 @@ function getWorkTwo() {
           setWorkTitle2("Error loading data");
           setWorkDevInfo2("Error loading data");
           setWorkDesignInfo2("Error loading data");
+          setWorkImage2("/images/imac_404.png");
           setWorkImage2Alt("Error loading data");
         });
     };
@@ -146,6 +148,7 @@ function getWorkThree() {
           setWorkTitle3("Error loading data");
           setWorkDevInfo3("Error loading data");
           setWorkDesignInfo3("Error loading data");
+          setWorkImage3("/images/imac_404.png");
           setWorkImage3Alt("Error loading data");
         });
     };

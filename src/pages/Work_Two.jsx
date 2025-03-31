@@ -1,26 +1,26 @@
-import { getWorkOne } from "../utilities/contentfulClient";
+import { getWorkTwo } from "../utilities/contentfulClient";
 
-function Work_One() {
-  const { workTitle1, workDevInfo1, workDesignInfo1, workImage1, workImage1Alt } = getWorkOne();
+function Work_Two() {
+  const { workTitle2, workDevInfo2, workDesignInfo2, workImage2, workImage2Alt } = getWorkTwo();
 
   return (
     <section className="section work_background">
       <article className="work_container">
         <img
-          src={workImage1}
-          alt={workImage1Alt}
+          src={workImage2}
+          alt={workImage2Alt}
           className="work_image"
           tabIndex={0}
         />
         <div className="work_text_container">
           <h2 className="work_title" tabIndex={0}>
-            {workTitle1}
+            {workTitle2}
           </h2>
           <p className="work_info" tabIndex={0}>
-            {workDevInfo1}
+            {workDevInfo2}
           </p>
           <p className="work_info" tabIndex={0}>
-            {workDesignInfo1}
+            {workDesignInfo2}
           </p>
         </div>
       </article>
@@ -28,4 +28,4 @@ function Work_One() {
   );
 }
 
-export default Work_One;
+export default Work_Two;

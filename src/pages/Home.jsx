@@ -20,7 +20,17 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 Fancybox.bind("[data-fancybox]", {});
 
+// contentful CMS
+import { getWorkOne } from "../utilities/contentfulClient";
+import { getWorkTwo } from "../utilities/contentfulClient";
+import { getWorkThree } from "../utilities/contentfulClient";
+
 function Home() {
+  // contentful state
+  const { workImage1, workImage1Alt } = getWorkOne();
+  const { workImage2, workImage2Alt } = getWorkTwo();
+  const { workImage3, workImage3Alt } = getWorkThree();
+
   useEffect(() => {
     document.title = "Aidan's Portfolio";
   }, []);
@@ -72,14 +82,10 @@ function Home() {
           data-aos-once="false"
         >
           <div className="grid_card">
-            <img
-              src="/images/imac_test.png"
-              alt="Aidan's site logo"
-              className="project_img"
-            />
+            <img src={workImage1} alt={workImage1Alt} className="project_img" />
             <h2 className="project_title">Eclipse</h2>
             <Link
-              to="/work"
+              to="/work-one"
               className="project_link"
               style={{ cursor: "pointer" }}
             >
@@ -87,14 +93,10 @@ function Home() {
             </Link>
           </div>
           <div className="grid_card">
-            <img
-              src="/images/imac_test.png"
-              alt="Aidan's site logo"
-              className="project_img"
-            />
+            <img src={workImage2} alt={workImage2Alt} className="project_img" />
             <h2 className="project_title">Ocean Clip</h2>
             <Link
-              to="/work"
+              to="/work-two"
               className="project_link"
               style={{ cursor: "pointer" }}
             >
@@ -102,14 +104,10 @@ function Home() {
             </Link>
           </div>
           <div className="grid_card span_2">
-            <img
-              src="/images/imac_test.png"
-              alt="Aidan's site logo"
-              className="project_img"
-            />
+            <img src={workImage3} alt={workImage3Alt} className="project_img" />
             <h2 className="project_title">Woo Store</h2>
             <Link
-              to="/work"
+              to="/work-three"
               className="project_link"
               style={{ cursor: "pointer" }}
             >

@@ -48,8 +48,10 @@
   width: 100%;
   height: auto;
   padding: 0rem;
+  margin-top: 1.5rem;
   border-radius: 1rem;
   pointer-events: none;
+  transform: scale(1.2);
 }
 
 // desktop
@@ -66,5 +68,7 @@
 
   .work_image {
     padding: 0rem 20%;
+    margin-top: 0rem;
+    transform: scale(1);
   }
 }

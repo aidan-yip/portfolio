@@ -121,6 +121,7 @@ function Home() {
 
       {/* design */}
       <section className="section" id="design_section">
+        <h2 className="project_title design_title">Design</h2>
         <div
           className="design_grid"
           data-aos="fade-up"

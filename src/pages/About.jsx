@@ -177,9 +177,9 @@ function About() {
               <li className="skill_item" tabIndex={0}>
                 Final Cut
               </li>
-              <li className="skill_item" tabIndex={0}>
+              {/* <li className="skill_item" tabIndex={0}>
                 Blender
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

@@ -85,7 +85,9 @@ function Home() {
         >
           <div className="grid_card">
             <img src={workImage1} alt={workImage1Alt} className="project_img" />
-            <h2 className="project_title">Eclipse</h2>
+            <h2 className="project_title" tabIndex={0}>
+              Eclipse
+            </h2>
             <Link
               to="/work-one"
               className="project_link"
@@ -96,7 +98,9 @@ function Home() {
           </div>
           <div className="grid_card">
             <img src={workImage2} alt={workImage2Alt} className="project_img" />
-            <h2 className="project_title">Ocean Clip</h2>
+            <h2 className="project_title" tabIndex={0}>
+              Ocean Clip
+            </h2>
             <Link
               to="/work-two"
               className="project_link"
@@ -107,7 +111,9 @@ function Home() {
           </div>
           <div className="grid_card span_2">
             <img src={workImage3} alt={workImage3Alt} className="project_img" />
-            <h2 className="project_title">Woo Store</h2>
+            <h2 className="project_title" tabIndex={0}>
+              Woo Store
+            </h2>
             <Link
               to="/work-three"
               className="project_link"
@@ -121,7 +127,7 @@ function Home() {
 
       {/* design */}
       <section className="section" id="design_section">
-        <h2 className="project_title design_title">Design</h2>
+        <h2 className="project_title design_title" tabIndex={0}>Design</h2>
         <div
           className="design_grid"
           data-aos="fade-up"

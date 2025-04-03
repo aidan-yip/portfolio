@@ -47,6 +47,9 @@ function Work_Two() {
           </p>
         </div>
       </article>
+      <h2 tabIndex={0} className="copyright_text">
+        Copyright © Aidan Yip
+      </h2>
     </section>
   );
 }

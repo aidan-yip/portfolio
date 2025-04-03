@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+// copyright © Aidan Yip, all rights reserved.
+
 import { getWorkOne } from "../utilities/contentfulClient";
 
 function Work_One() {

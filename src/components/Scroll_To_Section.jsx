@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 

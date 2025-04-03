@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+// copyright © Aidan Yip, all rights reserved.
 
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Header() {

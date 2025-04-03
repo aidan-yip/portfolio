@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 // Contentful text variables
 const CONTENTFUL_TOKEN = import.meta.env.VITE_CONTENTFUL_TOKEN;
 const CONTENTFUL_SPACE = import.meta.env.VITE_CONTENTFUL_SPACE;

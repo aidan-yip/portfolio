@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 // react
 import React, { useEffect, useRef } from "react";
 

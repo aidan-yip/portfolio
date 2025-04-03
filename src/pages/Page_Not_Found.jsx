@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 function Page_Not_Found() {
   return (
     <section className="section not_found_background">

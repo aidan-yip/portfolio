@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 // react
 import { useEffect, useRef } from "react";
 
@@ -127,7 +129,9 @@ function Home() {
 
       {/* design */}
       <section className="section" id="design_section">
-        <h2 className="project_title design_title" tabIndex={0}>Design</h2>
+        <h2 className="project_title design_title" tabIndex={0}>
+          Design
+        </h2>
         <div
           className="design_grid"
           data-aos="fade-up"

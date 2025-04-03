@@ -1,3 +1,5 @@
+// copyright © Aidan Yip, all rights reserved.
+
 import { getWorkThree } from "../utilities/contentfulClient";
 
 function Work_Two() {

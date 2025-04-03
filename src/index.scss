@@ -115,6 +115,14 @@ button:focus-visible {
 
 // utility classes
 
+.margin_top {
+  margin-top: 5rem;
+}
+
+.margin_right {
+  margin-right: 1rem;
+}
+
 // desktop
 
 @media screen and (min-width: 50em) {

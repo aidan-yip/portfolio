@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
 import { getWorkOne } from "../utilities/contentfulClient";
 
 function Work_One() {
-  const { workTitle1, workDevInfo1, workDesignInfo1, workImage1, workImage1Alt } = getWorkOne();
+  const {
+    workTitle1,
+    workDevInfo1,
+    workDesignInfo1,
+    workImage1,
+    workImage1Alt,
+  } = getWorkOne();
 
   return (
     <section className="section work_background">
@@ -16,6 +23,20 @@ function Work_One() {
           <h2 className="work_title" tabIndex={0}>
             {workTitle1}
           </h2>
+          <a
+            href="https://aidanyip.com/eclipse/"
+            className="project_link margin_right"
+            style={{ cursor: "pointer" }}
+          >
+            Visit
+          </a>
+          <a
+            href="https://github.com/aidan-yip/eclipse"
+            className="project_link margin_right"
+            style={{ cursor: "pointer" }}
+          >
+            GitHub
+          </a>
           <p className="work_info" tabIndex={0}>
             {workDevInfo1}
           </p>

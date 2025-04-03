@@ -5,11 +5,13 @@
 
 .work_title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 .work_info {
   font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 // section/containers
@@ -53,10 +55,6 @@
 // desktop
 
 @media screen and (min-width: 50em) {
-  .work_title {
-    text-align: left;
-  }
-
   .work_container {
     margin-top: 5rem;
     padding: 4rem;

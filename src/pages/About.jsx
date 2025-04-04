@@ -73,6 +73,13 @@ function About() {
                 with a distinct advantage in web design and a comprehensive
                 understanding of color science and theory.
               </p>
+              <a
+                href="mailto:jamesayipt6@gmail.com"
+                className="project_link email_link"
+                style={{ cursor: "pointer" }}
+              >
+                Email Me
+              </a>
             </article>
           </div>
 
@@ -113,6 +120,9 @@ function About() {
               </li>
               <li className="skill_item" tabIndex={0}>
                 WordPress
+              </li>
+              <li className="skill_item" tabIndex={0}>
+                Woo Commerce
               </li>
               <li className="skill_item" tabIndex={0}>
                 Liquid

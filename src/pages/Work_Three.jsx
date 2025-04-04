@@ -37,6 +37,28 @@ function Work_Two() {
           <p className="work_info" tabIndex={0}>
             {workDesignInfo3}
           </p>
+
+          {/* skills */}
+          <ul className="skills_container" tabIndex={0}>
+            <li className="skill_item" tabIndex={0}>
+              PHP
+            </li>
+            <li className="skill_item" tabIndex={0}>
+              WordPress
+            </li>
+            <li className="skill_item" tabIndex={0}>
+              Woo Commerce
+            </li>
+            <li className="skill_item" tabIndex={0}>
+              Git
+            </li>
+            <li className="skill_item" tabIndex={0}>
+              GitHub
+            </li>
+            <li className="skill_item" tabIndex={0}>
+              Illustrator
+            </li>
+          </ul>
         </div>
       </article>
       <h2 tabIndex={0} className="copyright_text">

@@ -10,10 +10,14 @@ function Header() {
     if (menuOpen) {
       document.querySelector("nav").style.opacity = "0";
       document.querySelector("nav").style.pointerEvents = "none";
+      setTimeout(() => {
+        document.querySelector("nav").style.display = "none";
+      }, 1000);
       setMenuOpen(false);
     } else {
       document.querySelector("nav").style.opacity = "1";
       document.querySelector("nav").style.pointerEvents = "all";
+      document.querySelector("nav").style.display = "flex";
       setMenuOpen(true);
     }
   }

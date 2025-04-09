@@ -169,13 +169,13 @@ function Home() {
           </div>
           <div className="grid_card art_card">
             <a
-              href="/images/time.png"
+              href="/images/ocean_legacy_web.png"
               className="gallery_open"
               data-fancybox="gallery"
               style={{ cursor: "pointer" }}
             >
               <img
-                src="/images/time.png"
+                src="/images/ocean_legacy_web.png"
                 alt="A clock with wings and a light blue background filled with clocks"
                 className="art_img"
               />

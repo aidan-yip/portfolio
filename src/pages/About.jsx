@@ -171,6 +171,9 @@ function About() {
                 Adobe Fresco
               </li>
               <li className="skill_item" tabIndex={0}>
+                Pixelmator Pro
+              </li>
+              <li className="skill_item" tabIndex={0}>
                 GIMP
               </li>
             </ul>
@@ -187,8 +190,9 @@ function About() {
                 Logic Pro X
               </li>
               <li className="skill_item" tabIndex={0}>
-                Final Cut
+                Final Cut Pro X
               </li>
+
               {/* <li className="skill_item" tabIndex={0}>
                 Blender
               </li> */}

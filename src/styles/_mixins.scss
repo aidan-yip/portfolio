@@ -2,6 +2,7 @@
 
 @mixin section_background {
   background-color: #181818ba;
+  border: 1px solid #2c2c2c90;
   box-shadow: 0 0 10px 0 #00000099;
   backdrop-filter: blur(10px);
   // legacy webkit browser blur

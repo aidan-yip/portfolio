@@ -70,7 +70,7 @@ function Work_Two() {
               GitHub
             </li>
             <li className="skill_item" tabIndex={0}>
-              Illustrator
+              Pixelmator Pro
             </li>
           </ul>
         </div>

@@ -16,7 +16,7 @@ header {
 
 nav {
   opacity: 0;
-  display: flex;
+  display: none;
   width: 100%;
   max-width: variables.$max_width;
   flex-direction: column;

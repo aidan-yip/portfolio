@@ -17,6 +17,9 @@ import * as THREE from "three";
 // vanta.js
 import RINGS from "vanta/dist/vanta.rings.min";
 
+// vanilla tilt
+import VanillaTilt from "vanilla-tilt";
+
 // fancybox lightbox
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
@@ -57,6 +60,12 @@ function Home() {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, []);
+
+    // vanilla tilt
+    useEffect(() => {
+      const elements = document.querySelectorAll("[data-tilt]");
+      VanillaTilt.init(elements);
+    }, []);
 
   return (
     <>
@@ -139,7 +148,7 @@ function Home() {
           data-aos-anchor-placement="top-bottom"
           data-aos-once="false"
         >
-          <div className="grid_card art_card">
+          <div className="grid_card art_card" data-tilt data-tilt-scale="106%">
             <a
               href="/images/clouds_no_logo.png"
               className="gallery_open"
@@ -153,7 +162,7 @@ function Home() {
               />
             </a>
           </div>
-          <div className="grid_card art_card">
+          <div className="grid_card art_card" data-tilt data-tilt-scale="106%">
             <a
               href="/images/dawn.jpg"
               className="gallery_open"
@@ -167,7 +176,7 @@ function Home() {
               />
             </a>
           </div>
-          <div className="grid_card art_card">
+          <div className="grid_card art_card" data-tilt data-tilt-scale="106%">
             <a
               href="/images/ocean_legacy_web.png"
               className="gallery_open"

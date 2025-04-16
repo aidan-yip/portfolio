@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(150deg, #212121, #1a1a1a) padding-box,
-    linear-gradient(150deg, #77777790 0%, #3a3a3a90 100%) border-box;
+    linear-gradient(150deg, #8c8c8c90 0%, #3a3a3a90 100%) border-box;
   border: 1px solid transparent;
   padding: 2rem;
   border-radius: 2rem;
@@ -87,7 +87,9 @@
 .art_card {
   height: 97%;
   background: none;
+  border-radius: 1rem;
   padding: 0rem;
+  padding-top: 0.4rem;
 }
 
 .style_card {
@@ -106,8 +108,12 @@
   grid-column: span 1;
 }
 
-.grid_card:hover {
-  transform: scale(1.03);
+// desktop
+
+@media screen and (min-width: 50em) {
+  .grid_card:hover {
+    transform: scale(1.06);
+  }
 }
 
 .gallery_open {
@@ -155,16 +161,15 @@
   margin-bottom: 2rem;
   font-weight: 600;
   color: #f2f2f2;
-  background-color: #4483ff;
-  border: 1px solid #699bff;
+  background: linear-gradient(145deg, #498cff, #075aff);
+  border: 1px solid #4e89ff;
   transition: 0.4s;
 }
 
 .project_link:hover {
-  color: #001a4e;
-  background-color: #f2f2f2;
-  border: 1px solid #b9b9b9;
-  box-shadow: 0 0 25px 0 #f2f2f2d4;
+  color: #ffffff;
+  scale: 1.08;
+  box-shadow: 0 3px 25px 0 #699bffca;
 }
 
 // hero section

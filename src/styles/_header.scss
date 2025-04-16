@@ -29,7 +29,7 @@ nav {
   border-radius: 0rem;
   background-color: #181818ba;
   border: 1px solid #2c2c2c90;
-  box-shadow: 0 0 25px 0 #00000099;
+  box-shadow: 0 0 25px 0 #000000a4;
   backdrop-filter: blur(25px);
   // legacy webkit browser blur
   -webkit-backdrop-filter: blur(25px);
@@ -136,5 +136,33 @@ nav {
 
   .navlink {
     font-weight: 500;
+  }
+
+  .navlink:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    transition: all 0.3s;
+  }
+
+  .social_logo:hover {
+    animation: gentleShake 0.5s ease-in-out;
+  }
+}
+
+@keyframes gentleShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

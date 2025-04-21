@@ -63,7 +63,7 @@ function Work_One() {
               Vite
             </li>
             <li className="skill_item" tabIndex={0}>
-              REST API
+              REST APIs
             </li>
             <li className="skill_item" tabIndex={0}>
               Git

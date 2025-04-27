@@ -25,7 +25,7 @@ function Work_One() {
             {workTitle1}
           </h2>
           <a
-            href="https://aidanyip.com/eclipse/"
+            href="https://eclipse-db.netlify.app"
             className="project_link margin_right"
             style={{ cursor: "pointer" }}
           >

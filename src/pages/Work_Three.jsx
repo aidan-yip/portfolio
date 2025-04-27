@@ -25,7 +25,7 @@ function Work_Two() {
             {workTitle3}
           </h2>
           <a
-            href="https://aidanyip.com/woo/"
+            href="https://woo-store.aidanyip.com"
             className="project_link margin_right"
             style={{ cursor: "pointer" }}
           >

@@ -125,6 +125,9 @@ function About() {
                 Woo Commerce
               </li>
               <li className="skill_item" tabIndex={0}>
+                Contentful
+              </li>
+              <li className="skill_item" tabIndex={0}>
                 Liquid
               </li>
               <li className="skill_item" tabIndex={0}>
@@ -138,6 +141,9 @@ function About() {
               </li>
               <li className="skill_item" tabIndex={0}>
                 Vite
+              </li>
+              <li className="skill_item" tabIndex={0}>
+                REST APIs
               </li>
               <li className="skill_item" tabIndex={0}>
                 Linux

@@ -43,12 +43,14 @@
 .about_container {
   width: 100%;
   max-width: variables.$max_width;
-  margin: 3rem auto;
+  margin: 4rem auto;
   @include mixins.section_background;
   border-radius: 2rem;
 }
 
 .about_info {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: variables.$max_width;
   height: auto;
@@ -62,11 +64,6 @@
   padding: 2.5rem 2rem;
   font-weight: bold;
   transition: all 0.3s;
-}
-
-.about_info {
-  display: flex;
-  flex-direction: column;
 }
 
 .text_container {

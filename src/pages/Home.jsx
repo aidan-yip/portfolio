@@ -85,156 +85,171 @@ function Home() {
         </div>
       </section>
 
-      {/* creative works */}
-      <section className="section" id="works_section">
-        <div
-          className="project_grid"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        >
-          <div className="grid_card">
-            <img src={workImage1} alt={workImage1Alt} className="project_img" />
-            <h2 className="project_title" tabIndex={0}>
-              Eclipse
-            </h2>
-            <Link
-              to="/work-one"
-              className="project_link"
-              style={{ cursor: "pointer" }}
-            >
-              Learn More
-            </Link>
-          </div>
-          <div className="grid_card">
-            <img src={workImage2} alt={workImage2Alt} className="project_img" />
-            <h2 className="project_title" tabIndex={0}>
-              Ocean Clip
-            </h2>
-            <Link
-              to="/work-two"
-              className="project_link"
-              style={{ cursor: "pointer" }}
-            >
-              Learn More
-            </Link>
-          </div>
-          <div className="grid_card span_2">
-            <img src={workImage3} alt={workImage3Alt} className="project_img" />
-            <h2 className="project_title" tabIndex={0}>
-              Woo Store
-            </h2>
-            <Link
-              to="/work-three"
-              className="project_link"
-              style={{ cursor: "pointer" }}
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </section>
+      <div id="clear_background_float">
+        {/* creative works */}
 
-      {/* design */}
-      <section className="section" id="design_section">
-        <h2 className="project_title design_title" tabIndex={0}>
-          Design
-        </h2>
-        <div
-          className="design_grid"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        >
+        <section className="section" id="works_section">
           <div
-            className="grid_card art_card"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.6"
-            data-tilt-scale="106%"
+            className="project_grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-once="false"
           >
-            <a
-              href="/images/clouds_no_logo.png"
-              className="gallery_open"
-              data-fancybox="gallery"
-              style={{ cursor: "pointer" }}
-            >
+            <div className="grid_card">
               <img
-                src="/images/clouds_no_logo.png"
-                alt="A cityscape above the clouds with a blue background"
-                className="art_img"
+                src={workImage1}
+                alt={workImage1Alt}
+                className="project_img"
               />
-            </a>
+              <h2 className="project_title" tabIndex={0}>
+                Eclipse
+              </h2>
+              <Link
+                to="/work-one"
+                className="project_link"
+                style={{ cursor: "pointer" }}
+              >
+                Learn More
+              </Link>
+            </div>
+            <div className="grid_card">
+              <img
+                src={workImage2}
+                alt={workImage2Alt}
+                className="project_img"
+              />
+              <h2 className="project_title" tabIndex={0}>
+                Ocean Clip
+              </h2>
+              <Link
+                to="/work-two"
+                className="project_link"
+                style={{ cursor: "pointer" }}
+              >
+                Learn More
+              </Link>
+            </div>
+            <div className="grid_card span_2">
+              <img
+                src={workImage3}
+                alt={workImage3Alt}
+                className="project_img"
+              />
+              <h2 className="project_title" tabIndex={0}>
+                Woo Store
+              </h2>
+              <Link
+                to="/work-three"
+                className="project_link"
+                style={{ cursor: "pointer" }}
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* design */}
+        <section className="section" id="design_section">
+          <h2 className="project_title design_title" tabIndex={0}>
+            Design
+          </h2>
+          <div
+            className="design_grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-once="false"
+          >
+            <div
+              className="grid_card art_card"
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.6"
+              data-tilt-scale="106%"
+            >
+              <a
+                href="/images/clouds_no_logo.png"
+                className="gallery_open"
+                data-fancybox="gallery"
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src="/images/clouds_no_logo.png"
+                  alt="A cityscape above the clouds with a blue background"
+                  className="art_img"
+                />
+              </a>
+            </div>
+            <div
+              className="grid_card art_card"
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.6"
+              data-tilt-scale="106%"
+            >
+              <a
+                href="/images/dawn.jpg"
+                className="gallery_open"
+                data-fancybox="gallery"
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src="/images/dawn.jpg"
+                  alt="A neon cityscape in Tokyo at dawn with a purple background"
+                  className="art_img"
+                />
+              </a>
+            </div>
+            <div
+              className="grid_card art_card"
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.6"
+              data-tilt-scale="106%"
+            >
+              <a
+                href="/images/ocean_legacy_web.png"
+                className="gallery_open"
+                data-fancybox="gallery"
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src="/images/ocean_legacy_web.png"
+                  alt="A clock with wings and a light blue background filled with clocks"
+                  className="art_img"
+                />
+              </a>
+            </div>
           </div>
           <div
-            className="grid_card art_card"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.6"
-            data-tilt-scale="106%"
+            className="style_guide_grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-once="false"
           >
-            <a
-              href="/images/dawn.jpg"
-              className="gallery_open"
-              data-fancybox="gallery"
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src="/images/dawn.jpg"
-                alt="A neon cityscape in Tokyo at dawn with a purple background"
-                className="art_img"
-              />
-            </a>
+            <div className="style_card">
+              <a
+                href="/images/style_devices_clear.png"
+                className="gallery_open"
+                data-fancybox="gallery"
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src="/images/style_devices_clear.png"
+                  alt="Aidan's site logo"
+                  className="style_img"
+                />
+              </a>
+            </div>
           </div>
-          <div
-            className="grid_card art_card"
-            data-tilt
-            data-tilt-glare
-            data-tilt-max-glare="0.6"
-            data-tilt-scale="106%"
-          >
-            <a
-              href="/images/ocean_legacy_web.png"
-              className="gallery_open"
-              data-fancybox="gallery"
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src="/images/ocean_legacy_web.png"
-                alt="A clock with wings and a light blue background filled with clocks"
-                className="art_img"
-              />
-            </a>
-          </div>
-        </div>
-        <div
-          className="style_guide_grid"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-once="false"
-        >
-          <div className="style_card">
-            <a
-              href="/images/style_devices_clear.png"
-              className="gallery_open"
-              data-fancybox="gallery"
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src="/images/style_devices_clear.png"
-                alt="Aidan's site logo"
-                className="style_img"
-              />
-            </a>
-          </div>
-        </div>
-        <h2 tabIndex={0} className="copyright_text">
-          Copyright © Aidan Yip
-        </h2>
-      </section>
+          <h2 tabIndex={0} className="copyright_text">
+            Copyright © Aidan Yip
+          </h2>
+        </section>
+      </div>
     </>
   );
 }

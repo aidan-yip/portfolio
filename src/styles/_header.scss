@@ -5,7 +5,7 @@
 
 header {
   position: fixed;
-  top: 0rem;
+  top: 0.3rem;
   z-index: 600;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ header {
 nav {
   opacity: 0;
   display: none;
-  width: 100%;
+  width: 98%;
   max-width: variables.$max_width;
   flex-direction: column;
   justify-content: space-between;
@@ -26,8 +26,8 @@ nav {
   padding: 1.3rem 1.3rem;
   font-size: 1rem;
   list-style: none;
-  border-radius: 0rem;
-  background-color: #181818ba;
+  border-radius: 2rem;
+  background-color: #18181894;
   border: 1px solid #2c2c2c90;
   box-shadow: 0 0 25px 0 #000000a4;
   backdrop-filter: blur(25px);
@@ -91,7 +91,7 @@ nav {
 #menu_button {
   z-index: 1000;
   top: 1rem;
-  right: 0.7rem;
+  right: 1rem;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -102,8 +102,8 @@ nav {
   font-size: 3rem;
   border-radius: 50rem;
   color: #ffffff;
-  background-color: #181818ba;
-  border: 1px solid #2c2c2c90;
+  background-color: #1818184d;
+  border: 1px solid #3c3c3c90;
   box-shadow: 0 0 25px 0 #000000b7;
   backdrop-filter: blur(25px);
   // legacy webkit browser blur
@@ -130,7 +130,7 @@ nav {
     flex-direction: row;
     align-items: center;
     padding: 0.5rem 17%;
-    border-radius: 1rem;
+    border-radius: 5rem;
     gap: 0rem;
   }
 

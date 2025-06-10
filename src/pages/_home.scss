@@ -15,6 +15,11 @@
 // containers
 
 #hero_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
   height: 105vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +34,24 @@
 
 .vanta-canvas {
   opacity: 0.6;
+}
+
+#clear_background_float {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  z-index: 2;
+  background-color: #181818ba;
+  border: 1px solid #2c2c2c90;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  box-shadow: 0 0 25px 0 #000000b7;
+  backdrop-filter: blur(25px);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(25px);
+  transition: all 0.3s;
 }
 
 .project_grid {
@@ -64,7 +87,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(150deg, #212121, #1a1a1a) padding-box,
+  background: linear-gradient(150deg, #212121d0, #1a1a1ad0) padding-box,
     linear-gradient(150deg, #8c8c8c90 0%, #3a3a3a90 100%) border-box;
   border: 1px solid transparent;
   padding: 2rem;
@@ -161,16 +184,19 @@
   padding: 0.6rem 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
-  color: #f2f2f2;
-  background: linear-gradient(145deg, #498cff, #075aff);
-  border: 1px solid #4e89ff;
+  color: #0e0e0e;
+  background: rgba(221, 246, 255, 0.774);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(221, 246, 255, 0.82);
   transition: 0.4s;
 }
 
 .project_link:hover {
-  color: #ffffff;
-  scale: 1.08;
-  box-shadow: 0 3px 25px 0 #699bffca;
+  color: #0e0e0e;
+  scale: 1.1;
+  box-shadow: 0 3px 25px 0 #bbe2ffc3;
 }
 
 // hero section

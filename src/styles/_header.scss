@@ -5,7 +5,7 @@
 
 header {
   position: fixed;
-  top: 0.3rem;
+  top: 0.7rem;
   z-index: 600;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ header {
 nav {
   opacity: 0;
   display: none;
-  width: 98%;
+  width: 95%;
   max-width: variables.$max_width;
   flex-direction: column;
   justify-content: space-between;
@@ -91,7 +91,7 @@ nav {
 #menu_button {
   z-index: 1000;
   top: 1rem;
-  right: 1rem;
+  right: 1.5rem;
   position: absolute;
   display: flex;
   justify-content: center;

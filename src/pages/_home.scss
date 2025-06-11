@@ -36,7 +36,11 @@
   opacity: 0.6;
 }
 
-#clear_background_float {
+.clear_background_float {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   position: absolute;
@@ -184,19 +188,90 @@
   padding: 0.6rem 1rem;
   margin-bottom: 2rem;
   font-weight: 600;
-  color: #0e0e0e;
-  background: rgba(221, 246, 255, 0.774);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(221, 246, 255, 0.82);
+  color: #ffffff;
+  background-color: #ffffff2e;
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid #ffffffcc;
+  box-shadow: 0 8px 32px #1f268733, inset 0 4px 20px #ffffff4d;
   transition: 0.4s;
 }
 
+.project_link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff1a;
+  border-radius: 2rem;
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px #ffffff,
+    inset 0px -9px 0px -8px #ffffff;
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) brightness(115%);
+}
+
 .project_link:hover {
-  color: #0e0e0e;
-  scale: 1.1;
-  box-shadow: 0 3px 25px 0 #bbe2ffc3;
+  color: #ffffff;
+  scale: 1.08;
+  animation: springy 0.8s;
+  // box-shadow: 0 3px 25px 0 #bbe2ffc3;
+}
+
+// handles
+
+.handle_line {
+  width: 5rem;
+  height: 1rem;
+  margin: 0 auto;
+  margin: 0.8rem 0rem;
+  border-radius: 2rem;
+  // liquid glass css style from Kevin Ramirez: https://dev.to/kevinbism/recreating-apples-liquid-glass-effect-with-pure-css-3gpl
+  background-color: #ffffff2e;
+  backdrop-filter: blur(2px) saturate(180%);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid #ffffffcc;
+  box-shadow: 0 8px 32px #1f268733, inset 0 4px 20px #ffffff4d;
+}
+
+.handle_line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff1a;
+  border-radius: 2rem;
+  backdrop-filter: blur(1px);
+  // legacy webkit browser blur
+  -webkit-backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px #ffffff,
+    inset 0px -9px 0px -8px #ffffff;
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) brightness(115%);
+}
+
+@keyframes springy {
+  0% {
+    transform: scale(0.96);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  75% {
+    transform: scale(0.99);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // hero section

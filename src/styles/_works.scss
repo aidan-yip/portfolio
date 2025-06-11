@@ -13,7 +13,7 @@
 
 .work_info {
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
 }
 
@@ -40,9 +40,20 @@
 }
 
 .work_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 0rem 0rem;
   margin: 2rem 0rem;
+}
+
+.links_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0rem;
 }
 
 // images

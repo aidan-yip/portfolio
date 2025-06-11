@@ -24,20 +24,22 @@ function Work_One() {
           <h2 className="work_title" tabIndex={0}>
             {workTitle1}
           </h2>
-          <a
-            href="https://eclipse.aidanyip.com"
-            className="project_link margin_right"
-            style={{ cursor: "pointer" }}
-          >
-            Visit
-          </a>
-          <a
-            href="https://github.com/aidan-yip/eclipse"
-            className="project_link margin_right"
-            style={{ cursor: "pointer" }}
-          >
-            GitHub
-          </a>
+          <div className="links_container">
+            <a
+              href="https://eclipse.aidanyip.com"
+              className="project_link margin_right"
+              style={{ cursor: "pointer" }}
+            >
+              Visit
+            </a>
+            <a
+              href="https://github.com/aidan-yip/eclipse"
+              className="project_link margin_right"
+              style={{ cursor: "pointer" }}
+            >
+              GitHub
+            </a>
+          </div>
           <p className="work_info" tabIndex={0}>
             {workDevInfo1}
           </p>

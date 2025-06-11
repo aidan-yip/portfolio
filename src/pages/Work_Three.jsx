@@ -24,13 +24,15 @@ function Work_Two() {
           <h2 className="work_title" tabIndex={0}>
             {workTitle3}
           </h2>
-          <a
-            href="https://woo-store.aidanyip.com"
-            className="project_link margin_right"
-            style={{ cursor: "pointer" }}
-          >
-            Visit
-          </a>
+          <div className="links_container">
+            <a
+              href="https://woo-store.aidanyip.com"
+              className="project_link margin_right"
+              style={{ cursor: "pointer" }}
+            >
+              Visit
+            </a>
+          </div>
           <p className="work_info" tabIndex={0}>
             {workDevInfo3}
           </p>

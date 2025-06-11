@@ -67,6 +67,14 @@ function Home() {
     VanillaTilt.init(elements);
   }, []);
 
+  // scroll to works section
+  function scrollToWorks() {
+    const worksSection = document.getElementById("works_section");
+    if (worksSection) {
+      worksSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <>
       <section className="section" id="hero_section" ref={vantaRef}>
@@ -85,9 +93,9 @@ function Home() {
         </div>
       </section>
 
-      <div id="clear_background_float">
+      <div className="clear_background_float">
+        <div className="handle_line" onMouseDown={scrollToWorks}></div>
         {/* creative works */}
-
         <section className="section" id="works_section">
           <div
             className="project_grid"

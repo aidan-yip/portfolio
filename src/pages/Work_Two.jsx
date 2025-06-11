@@ -25,20 +25,22 @@ function Work_Two() {
           <h2 className="work_title" tabIndex={0}>
             {workTitle2}
           </h2>
-          <a
-            href="https://ocean-clip.myshopify.com"
-            className="project_link margin_right"
-            style={{ cursor: "pointer" }}
-          >
-            Visit
-          </a>
-          <a
-            href="https://github.com/aidan-yip/ocean-clip-theme"
-            className="project_link margin_right"
-            style={{ cursor: "pointer" }}
-          >
-            GitHub
-          </a>
+          <div className="links_container">
+            <a
+              href="https://ocean-clip.myshopify.com"
+              className="project_link margin_right"
+              style={{ cursor: "pointer" }}
+            >
+              Visit
+            </a>
+            <a
+              href="https://github.com/aidan-yip/ocean-clip-theme"
+              className="project_link margin_right"
+              style={{ cursor: "pointer" }}
+            >
+              GitHub
+            </a>
+          </div>
           <p className="work_info" tabIndex={0}>
             {workDevInfo2}
           </p>

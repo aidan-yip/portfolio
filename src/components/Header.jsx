@@ -18,9 +18,9 @@ function Header() {
         menuBtn.style.top = "0.2rem";
         menuBtn.style.right = "0.7rem";
       }
-      // setTimeout(() => {
-      //   document.querySelector("nav").style.display = "none";
-      // }, 1000);
+      setTimeout(() => {
+        document.querySelector("nav").style.height = "0";
+      }, 1000);
       setMenuOpen(false);
     } else {
       const nav = document.querySelector("nav");
@@ -29,6 +29,7 @@ function Header() {
         nav.style.opacity = "1";
         nav.style.pointerEvents = "all";
         nav.style.display = "flex";
+        nav.style.height = "auto";
         menuBtn.style.transform = "rotate(45deg)";
         menuBtn.style.color = "red";
         menuBtn.style.top = "1rem";

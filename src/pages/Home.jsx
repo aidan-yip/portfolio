@@ -91,6 +91,7 @@ function Home() {
             Front-End Developer/Designer
           </p>
         </div>
+        <p id="scroll_text">Scroll to see more</p>
       </section>
 
       <div className="clear_background_float">

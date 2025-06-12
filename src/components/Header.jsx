@@ -8,20 +8,32 @@ function Header() {
 
   function ToggleMenu() {
     if (menuOpen) {
-      document.querySelector("nav").style.opacity = "0";
-      document.querySelector("nav").style.pointerEvents = "none";
-      document.querySelector("#menu_button").style.transform = "rotate(0deg)";
-      document.querySelector("#menu_button").style.color = "#ffffff";
-      setTimeout(() => {
-        document.querySelector("nav").style.display = "none";
-      }, 1000);
+      const nav = document.querySelector("nav");
+      const menuBtn = document.querySelector("#menu_button");
+      if (nav && menuBtn) {
+        nav.style.opacity = "0";
+        nav.style.pointerEvents = "none";
+        menuBtn.style.transform = "rotate(0deg)";
+        menuBtn.style.color = "#ffffff";
+        menuBtn.style.top = "0.2rem";
+        menuBtn.style.right = "0.7rem";
+      }
+      // setTimeout(() => {
+      //   document.querySelector("nav").style.display = "none";
+      // }, 1000);
       setMenuOpen(false);
     } else {
-      document.querySelector("nav").style.opacity = "1";
-      document.querySelector("nav").style.pointerEvents = "all";
-      document.querySelector("nav").style.display = "flex";
-      document.querySelector("#menu_button").style.transform = "rotate(45deg)";
-      document.querySelector("#menu_button").style.color = "red";
+      const nav = document.querySelector("nav");
+      const menuBtn = document.querySelector("#menu_button");
+      if (nav && menuBtn) {
+        nav.style.opacity = "1";
+        nav.style.pointerEvents = "all";
+        nav.style.display = "flex";
+        menuBtn.style.transform = "rotate(45deg)";
+        menuBtn.style.color = "red";
+        menuBtn.style.top = "1rem";
+        menuBtn.style.right = "1.7rem";
+      }
       setMenuOpen(true);
     }
   }
@@ -45,7 +57,9 @@ function Header() {
       <a href="#maincontent" id="skip_to_main">
         Skip to main content
       </a>
-      <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}>+</button>
+      <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}>
+        +
+      </button>
       <nav aria-expanded={menuOpen}>
         <li>
           <Link

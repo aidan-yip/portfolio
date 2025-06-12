@@ -20,7 +20,7 @@ function Header() {
       }
       setTimeout(() => {
         document.querySelector("nav").style.height = "0";
-      }, 1000);
+      }, 300);
       setMenuOpen(false);
     } else {
       const nav = document.querySelector("nav");

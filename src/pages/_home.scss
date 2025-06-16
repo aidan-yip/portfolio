@@ -136,13 +136,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #77777717;
-  border: 1px solid #77777739;
   padding: 2rem;
   border-radius: 2rem;
-  backdrop-filter: blur(15px);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(15px);
+  background: linear-gradient(150deg, #212121, #1a1a1a) padding-box,
+    linear-gradient(150deg, #77777790 0%, #3a3a3a90 100%) border-box;
+  border: 1px solid transparent;
   transition: all 0.3s;
 }
 
@@ -177,13 +175,9 @@
   align-items: center;
   padding: 0rem;
   border-radius: 2rem;
-  background: #77777717;
-  border: 1px solid #77777739;
-  padding: 2rem;
-  border-radius: 2rem;
-  backdrop-filter: blur(15px);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(15px);
+  background: linear-gradient(150deg, #212121, #1a1a1a) padding-box,
+    linear-gradient(150deg, #77777790 0%, #3a3a3a90 100%) border-box;
+  border: 1px solid transparent;
   transition: all 0.3s;
   grid-column: span 1;
 }

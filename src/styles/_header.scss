@@ -30,9 +30,9 @@ nav {
   background-color: #18181894;
   border: 1px solid #2c2c2c90;
   box-shadow: 0 0 25px 0 #000000a4;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(6px);
   // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(6px);
   transition: all 0.5s;
 }
 
@@ -105,11 +105,11 @@ nav {
   border-radius: 50rem;
   color: #ffffff;
   background-color: #1818184d;
-  border: 1px solid #67676790;
-  box-shadow: 0 0 25px 0 #000000b7;
-  backdrop-filter: blur(25px);
+  border: 0.2px solid #67676790;
+  // box-shadow: 0 0 25px 0 #51515171;
+  backdrop-filter: blur(10px);
   // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -128,7 +128,7 @@ nav {
     inset 0px -9px 0px -8px #ffffffd3;
   opacity: 0.6;
   z-index: -1;
-  filter: blur(1px) brightness(115%);
+  filter: blur(2px) brightness(115%);
 }
 
 // desktop

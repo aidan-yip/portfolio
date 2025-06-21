@@ -236,8 +236,9 @@
   font-weight: 600;
   color: #ffffff;
   background-color: #7575751b;
-  backdrop-filter: blur(2px) saturate(180%);
-  box-shadow: 0 8px 32px #1f268733, inset 0 4px 20px #ffffff4d;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  backdrop-filter: blur(2px);
   transition: 0.4s;
 }
 
@@ -274,12 +275,9 @@
   margin: 0.8rem 0rem;
   border-radius: 2rem;
   // liquid glass css style from Kevin Ramirez: https://dev.to/kevinbism/recreating-apples-liquid-glass-effect-with-pure-css-3gpl
-  background-color: #ffffff2e;
-  backdrop-filter: blur(2px) saturate(180%);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(2px) saturate(180%);
-  border: 1px solid #ffffffcc;
-  box-shadow: 0 8px 32px #1f268733, inset 0 4px 20px #ffffff4d;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+    inset -0.1px -0.1px 1px #ffffffc5;
+  backdrop-filter: blur(2px);
 }
 
 .handle_line::after {

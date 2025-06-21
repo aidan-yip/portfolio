@@ -13,7 +13,7 @@
     "@cursorify/react": "^0.0.39",
     "@fancyapps/ui": "^5.0.36",
     "aos": "3.0.0-beta.6",
-    "contentful": "^11.7.1",
+    "contentful": "^11.7.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
@@ -23,11 +23,11 @@
     "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.29.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
-    "eslint": "^9.28.0",
+    "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",

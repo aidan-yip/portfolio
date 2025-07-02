@@ -160,11 +160,17 @@ nav {
 
   .navlink {
     font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 3rem;
   }
 
   .navlink:hover {
     color: #ffffff;
     text-shadow: 0 0 5px #ffffff;
+    background-color: #7575751b;
+    box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
+      inset -0.1px -0.1px 1px #ffffffc5;
+    backdrop-filter: blur(2px);
     transition: all 0.3s;
   }
 

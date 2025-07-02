@@ -73,13 +73,13 @@ function About() {
                 with a distinct advantage in web design and a comprehensive
                 understanding of color science and theory.
               </p>
-              <a
+              {/* <a
                 href="mailto:jamesayipt6@gmail.com"
                 className="project_link email_link"
                 style={{ cursor: "pointer" }}
               >
                 Email Me
-              </a>
+              </a> */}
             </article>
           </div>
 

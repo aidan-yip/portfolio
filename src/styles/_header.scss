@@ -39,21 +39,22 @@ nav {
 // links and logos
 
 #site_logo {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   pointer-events: none;
 }
 
 .site_logo_link {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   animation: gentleShake 0.5s ease-in-out;
 }
 
 .navlink {
-  font-weight: bolder;
+  font-weight: 650;
+  font-size: 1.5rem;
 }
 
 .social_logo {
@@ -159,16 +160,17 @@ nav {
 
   .navlink {
     font-weight: 650;
-    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
     border-radius: 3rem;
   }
 
   .navlink:hover {
     color: #ffffff;
-    text-shadow: 0 0 5px #ffffff;
-    background-color: #7575751b;
-    box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-      inset -0.1px -0.1px 1px #ffffffc5;
+    // text-shadow: 0 0 5px #ffffff;
+    background-color: #3d7a917d;
+    box-shadow: inset 0px 0px 5px #5995aa7d, inset 1px 1px 1px #d4f6ffec,
+      inset -0.1px -0.1px 1px #bcf3fcc5;
     backdrop-filter: blur(2px);
     transition: all 0.3s;
   }

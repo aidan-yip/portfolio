@@ -32,10 +32,11 @@
 }
 
 #site_logo_large {
-  width: 17rem;
-  height: 19rem;
+  width: 14rem;
+  height: 14rem;
   margin-top: -17rem;
   pointer-events: none;
+  margin-bottom: 3rem;
 }
 
 #scroll_text {
@@ -350,6 +351,7 @@
     width: 20rem;
     height: 20rem;
     margin-top: -6rem;
+    margin-bottom: 2rem;
   }
 
   .project_link {

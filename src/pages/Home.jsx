@@ -88,7 +88,7 @@ function Home() {
             Hey There, I'm Aidan!
           </h1>
           <p id="hero_subheader" tabIndex={0}>
-            Front-End Developer/Designer
+            Front-End Developer + Designer
           </p>
         </div>
         <p id="scroll_text">Scroll to see more</p>

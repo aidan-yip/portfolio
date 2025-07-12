@@ -236,28 +236,28 @@
   font-weight: 700;
   color: #ffffff;
   background-color: #31768f7d;
-  box-shadow: inset 0px 0px 5px #4f8fa67d, inset 1px 1px 1px #d4f6ffec,
-    inset -0.1px -0.1px 1px #bcf3fcc5;
+  box-shadow: inset 0px 0px 5px #4f8fa67d, inset 0.5px 0.5px 0px #afe1efec,
+    inset -0.5px -0.5px 0px #afe1efec;
   backdrop-filter: blur(2px);
   transition: 0.4s;
 }
 
-.project_link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff1a;
-  border-radius: 2rem;
-  backdrop-filter: blur(1px);
-  box-shadow: inset -10px -8px 0px -11px #ffffff,
-    inset 0px -9px 0px -8px #ffffff;
-  opacity: 0.6;
-  z-index: -1;
-  filter: blur(1px) brightness(115%);
-}
+// .project_link::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: #ffffff1a;
+//   border-radius: 2rem;
+//   backdrop-filter: blur(1px);
+//   box-shadow: inset -10px -5px 0px -10px #ffffff,
+//     inset -3px -9px 0px -8px #ffffff;
+//   opacity: 0.6;
+//   z-index: -1;
+//   filter: blur(1px) brightness(115%);
+// }
 
 .project_link:hover {
   color: #ffffff;

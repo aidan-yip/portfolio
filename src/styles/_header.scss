@@ -105,8 +105,8 @@ nav {
   border-radius: 50rem;
   color: #ffffff;
   background-color: #1818184d;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
+  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 0px #f4f5ffec,
+    inset -1px -1px 0px #ffffffc5;
   border: none;
   backdrop-filter: blur(10px);
   // legacy webkit browser blur

@@ -62,8 +62,10 @@ function Home() {
         <video
           src="/videos/color_waves.mp4"
           autoPlay
-          loop
+          webkit-playsinline
+          playsInline
           muted
+          loop
           className="hero_video"
         ></video>
         <img

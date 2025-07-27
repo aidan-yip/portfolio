@@ -35,7 +35,11 @@ nav {
 #site_logo {
   width: 3rem;
   height: 3rem;
-  pointer-events: none;
+ 
+}
+
+#site_logo:hover {
+  animation: gentleShake 0.5s ease-in-out;
 }
 
 .site_logo_link {

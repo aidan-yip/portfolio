@@ -42,25 +42,6 @@ function Home() {
     document.title = "Aidan's Portfolio";
   }, []);
 
-  // // vanta rings background
-  // const vantaRef = useRef(null);
-
-  // useEffect(() => {
-  //   const vantaEffect = RINGS({
-  //     el: vantaRef.current,
-  //     THREE: THREE,
-  //     mouseControls: true,
-  //     touchControls: true,
-  //     color: 0x20d6ff,
-  //     backgroundColor: 0x22,
-  //     vertexColors: THREE.VertexColors,
-  //   });
-
-  //   return () => {
-  //     if (vantaEffect) vantaEffect.destroy();
-  //   };
-  // }, []);
-
   // vanilla tilt
   useEffect(() => {
     const elements = document.querySelectorAll("[data-tilt]");
@@ -77,7 +58,14 @@ function Home() {
 
   return (
     <>
-      <section className="section" id="hero_section" >
+      <section className="section" id="hero_section">
+        <video
+          src="/videos/color_waves.mp4"
+          autoPlay
+          loop
+          muted
+          className="hero_video"
+        ></video>
         <img
           src="/icons/aidan_logo_clear.svg"
           alt="Aidan's site logo"

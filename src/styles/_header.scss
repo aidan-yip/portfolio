@@ -26,7 +26,7 @@ nav {
   padding: 1.8rem;
   font-size: 1rem;
   list-style: none;
-  border-radius: 2rem;
+  border-radius: 2.7rem;
   transition: all 0.5s;
 }
 
@@ -148,6 +148,7 @@ nav {
   position: relative;
   overflow: visible;
   pointer-events: none;
+  background: #1b1b1b7e;
 }
 .GlassContent {
   display: flex;
@@ -309,9 +310,9 @@ nav {
   .navlink:hover {
     color: #ffffff;
     text-shadow: 0 0 10px #ffffff;
-    background-color: #3d7a917d;
-    box-shadow: inset 0px 0px 5px #5995aa7d, inset 1px 1px 1px #d4f6ffec,
-      inset -0.1px -0.1px 1px #bcf3fcc5;
+    background-color: #31768f7d;
+    box-shadow: inset 0.8px 0.8px 0px #afe1efec,
+      inset -0.8px -0.8px 0px #afe1efec;
     backdrop-filter: blur(2px);
     transition: all 0.3s;
   }

@@ -7,9 +7,10 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function ToggleMenu() {
+    const nav = document.querySelector("nav");
+    const menuBtn = document.querySelector("#menu_button");
+    const GlassContent = document.querySelector(".GlassContent");
     if (menuOpen) {
-      const nav = document.querySelector("nav");
-      const menuBtn = document.querySelector("#menu_button");
       if (nav && menuBtn) {
         nav.style.opacity = "0";
         nav.style.pointerEvents = "none";
@@ -19,17 +20,19 @@ function Header() {
         menuBtn.style.right = "0.7rem";
       }
       setTimeout(() => {
-        document.querySelector("nav").style.height = "0";
+        nav.style.height = "0";
+        GlassContent.style.display = "none";
+        GlassContent.style.pointerEvents = "none";
       }, 300);
       setMenuOpen(false);
     } else {
-      const nav = document.querySelector("nav");
-      const menuBtn = document.querySelector("#menu_button");
       if (nav && menuBtn) {
         nav.style.opacity = "1";
         nav.style.pointerEvents = "all";
         nav.style.display = "flex";
         nav.style.height = "auto";
+        GlassContent.style.display = "flex";
+        GlassContent.style.pointerEvents = "all";
         menuBtn.style.transform = "rotate(45deg)";
         menuBtn.style.color = "red";
         menuBtn.style.top = "1rem";

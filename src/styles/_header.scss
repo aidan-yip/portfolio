@@ -23,16 +23,10 @@ nav {
   justify-content: space-between;
   align-items: left;
   gap: 2rem;
-  padding: 1.3rem 1.3rem;
+  padding: 1.8rem;
   font-size: 1rem;
   list-style: none;
   border-radius: 2rem;
-  background-color: #18181894;
-  box-shadow: inset 0.8px 0.8px 0px #565656ec, inset -0.8px -0.8px 0px #565656ec,
-    0 0 25px 0 #000000a4;
-  backdrop-filter: blur(10px);
-  // legacy webkit browser blur
-  -webkit-backdrop-filter: blur(10px);
   transition: all 0.5s;
 }
 
@@ -132,6 +126,153 @@ nav {
   filter: blur(2px) brightness(115%);
 }
 
+/* liquid glass code by https://www.tonnitools.com */
+
+.GlassContainer {
+  --corner-radius: 2.7rem;
+  --base-strength: 14px;
+  --extra-blur: 10px;
+  --softness: 12px;
+  --tint-amount: 0;
+  --tint-saturation: 2;
+  --tint-hue: 180deg;
+  --contrast: 1;
+  --brightness: 0;
+  --invert: 10%;
+
+  --total-strength: calc(var(--base-strength) + var(--extra-blur));
+  --edge-width: calc(0.3px + (var(--softness) * 0.1));
+  --emboss-width: calc((var(--softness) * 0.38));
+  --refraction-width: calc((var(--softness) * 0.3));
+
+  position: relative;
+  overflow: visible;
+  pointer-events: none;
+}
+.GlassContent {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  z-index: 100;
+  border-radius: var(--corner-radius);
+  pointer-events: auto;
+}
+.GlassMaterial {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
+}
+.GlassMaterial:after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  border-radius: var(--corner-radius);
+  background-color: rgba(128, 128, 128, 0);
+}
+.GlassMaterial > div {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border-radius: var(--corner-radius);
+  z-index: 2;
+  overflow: hidden;
+}
+.GlassMaterial .GlassEdgeReflection {
+  z-index: 4;
+  margin: calc(var(--total-strength) * -1);
+  border-radius: calc(var(--corner-radius) + var(--total-strength));
+  backdrop-filter: blur(var(--total-strength)) brightness(1.2) saturate(1.2);
+  padding: var(--edge-width);
+  border: var(--total-strength) solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
+}
+.GlassMaterial .GlassEmbossReflection {
+  backdrop-filter: blur(calc(var(--total-strength) * 1.5)) invert(0.25)
+    brightness(1.11) saturate(1.2) hue-rotate(-10deg) contrast(2.3);
+  padding: var(--emboss-width);
+  border: 0 solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
+}
+.GlassMaterial .GlassRefraction {
+  backdrop-filter: invert(0.1) brightness(1.2) contrast(1.5);
+  padding: var(--refraction-width);
+  border: calc(var(--emboss-width)) solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
+}
+.GlassMaterial .GlassBlur {
+  backdrop-filter: blur(var(--extra-blur)) brightness(1.25);
+  border-radius: calc(
+    var(--corner-radius) - (var(--emboss-width) + var(--refraction-width))
+  );
+  margin: calc(var(--emboss-width) + var(--refraction-width));
+}
+.GlassMaterial .BlendLayers {
+  z-index: 3;
+  backdrop-filter: blur(
+    calc((var(--softness) * 0.2) + (var(--extra-blur) * 0.2))
+  );
+}
+.GlassMaterial .BlendEdge {
+  z-index: 8;
+  backdrop-filter: blur(calc(var(--edge-width) * 0.4)) contrast(1.6)
+    saturate(1.5);
+}
+.GlassContainer:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: block;
+  border-radius: var(--corner-radius);
+  backdrop-filter: invert(var(--invert));
+}
+.GlassMaterial:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  display: block;
+  border-radius: var(--corner-radius);
+  padding: 1px;
+  border: 0 solid transparent;
+  background: linear-gradient(
+    155deg,
+    hsla(0, 0%, 100%, 0.15) 0%,
+    hsla(0, 0%, 0%, 0.2) 50%,
+    hsla(0, 0%, 100%, 0.15) 100%
+  );
+  backdrop-filter: invert(0.15) opacity(1);
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
+}
+.GlassMaterial .Highlight {
+  z-index: 12;
+  display: block;
+  border-radius: var(--corner-radius);
+  padding: 1px;
+  border: 0 solid transparent;
+  backdrop-filter: brightness(1.2) contrast(1.6) saturate(1.2) opacity(1);
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
+}
+
 // desktop
 
 @media (min-width: 40em) {
@@ -152,8 +293,6 @@ nav {
     padding: 0.5rem 17%;
     border-radius: 5rem;
     gap: 0rem;
-    box-shadow: inset 0.5px 0.5px 0px #4a4a4aec,
-      inset -0.5px -0.5px 0px #4a4a4aec, 0 0 25px 0 #000000a4;
   }
 
   #site_logo {
@@ -179,6 +318,16 @@ nav {
 
   .social_logo:hover {
     animation: gentleShake 0.5s ease-in-out;
+  }
+
+  .GlassContent {
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-radius: var(--corner-radius);
+    pointer-events: auto;
   }
 }
 

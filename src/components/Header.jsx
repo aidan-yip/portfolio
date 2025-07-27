@@ -61,87 +61,99 @@ function Header() {
       <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}>
         +
       </button>
-      <nav aria-expanded={menuOpen}>
-        <li>
-          <Link
-            to="/#hero_section"
-            className="site_logo_link"
-            style={{ cursor: "pointer" }}
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-              HandleDeviceType();
-            }}
-          >
-            <img
-              src="/icons/aidan_logo_clear.svg"
-              alt="Aidan's site logo"
-              id="site_logo"
+      <nav className="GlassContainer" aria-expanded={menuOpen}>
+        <div className="GlassContent">
+          <li>
+            <Link
+              to="/#hero_section"
+              className="site_logo_link"
               style={{ cursor: "pointer" }}
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 HandleDeviceType();
               }}
-            />
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/"
-            className="navlink"
-            style={{ cursor: "pointer" }}
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-              HandleDeviceType();
-            }}
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/#works_section"
-            className="navlink"
-            style={{ cursor: "pointer" }}
-            onClick={HandleDeviceType}
-          >
-            Works
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/#design_section"
-            className="navlink"
-            style={{ cursor: "pointer" }}
-            onClick={HandleDeviceType}
-          >
-            Design
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about/#maincontent"
-            className="navlink"
-            style={{ cursor: "pointer" }}
-            onClick={HandleDeviceType}
-          >
-            About
-          </Link>
-        </li>
-        <div id="social_links">
-          <a
-            href="https://www.linkedin.com/in/aidan-yip"
-            className="social_logo"
-            style={{ cursor: "pointer" }}
-          >
-            <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
-          </a>
-          <a
-            href="https://github.com/aidan-yip"
-            className="social_logo"
-            style={{ cursor: "pointer" }}
-          >
-            <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
-          </a>
+            >
+              <img
+                src="/icons/aidan_logo_clear.svg"
+                alt="Aidan's site logo"
+                id="site_logo"
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  HandleDeviceType();
+                }}
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              className="navlink"
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                HandleDeviceType();
+              }}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/#works_section"
+              className="navlink"
+              style={{ cursor: "pointer" }}
+              onClick={HandleDeviceType}
+            >
+              Works
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/#design_section"
+              className="navlink"
+              style={{ cursor: "pointer" }}
+              onClick={HandleDeviceType}
+            >
+              Design
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about/#maincontent"
+              className="navlink"
+              style={{ cursor: "pointer" }}
+              onClick={HandleDeviceType}
+            >
+              About
+            </Link>
+          </li>
+          <div id="social_links">
+            <a
+              href="https://www.linkedin.com/in/aidan-yip"
+              className="social_logo"
+              style={{ cursor: "pointer" }}
+            >
+              <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/aidan-yip"
+              className="social_logo"
+              style={{ cursor: "pointer" }}
+            >
+              <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
+            </a>
+          </div>
+        </div>
+        <div className="GlassMaterial">
+          <div className="GlassEdgeReflection"></div>
+          <div className="GlassEmbossReflection"></div>
+          <div className="GlassRefraction"></div>
+          <div className="GlassBlur"></div>
+          <div className="BlendLayers"></div>
+          <div className="BlendEdge"></div>
+          <div className="Highlight"></div>
+          <div className="Brightness"></div>
         </div>
       </nav>
     </header>

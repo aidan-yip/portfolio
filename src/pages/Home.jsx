@@ -42,24 +42,24 @@ function Home() {
     document.title = "Aidan's Portfolio";
   }, []);
 
-  // vanta rings background
-  const vantaRef = useRef(null);
+  // // vanta rings background
+  // const vantaRef = useRef(null);
 
-  useEffect(() => {
-    const vantaEffect = RINGS({
-      el: vantaRef.current,
-      THREE: THREE,
-      mouseControls: true,
-      touchControls: true,
-      color: 0x20d6ff,
-      backgroundColor: 0x22,
-      vertexColors: THREE.VertexColors,
-    });
+  // useEffect(() => {
+  //   const vantaEffect = RINGS({
+  //     el: vantaRef.current,
+  //     THREE: THREE,
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     color: 0x20d6ff,
+  //     backgroundColor: 0x22,
+  //     vertexColors: THREE.VertexColors,
+  //   });
 
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy();
+  //   };
+  // }, []);
 
   // vanilla tilt
   useEffect(() => {
@@ -77,7 +77,7 @@ function Home() {
 
   return (
     <>
-      <section className="section" id="hero_section" ref={vantaRef}>
+      <section className="section" id="hero_section" >
         <img
           src="/icons/aidan_logo_clear.svg"
           alt="Aidan's site logo"

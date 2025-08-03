@@ -52,6 +52,14 @@ nav {
 .navlink {
   font-weight: 650;
   font-size: 1.5rem;
+  animation: popInBouncy 0.5s ease-in-out;
+}
+
+.nav_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
 }
 
 .social_logo {
@@ -64,7 +72,7 @@ nav {
 #social_links {
   display: flex;
   justify-content: space-between;
-  width: 5rem;
+  width: 4.5rem;
   animation: gentleShake 0.5s ease-in-out;
 }
 
@@ -76,6 +84,7 @@ nav {
   left: 1rem;
   position: absolute;
   padding: 1rem;
+  border-radius: 5rem;
   background-color: #1b1b1b;
   opacity: 0;
   pointer-events: none;
@@ -279,7 +288,7 @@ nav {
 
 // desktop
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   header {
     top: 0.7rem;
   }
@@ -289,12 +298,12 @@ nav {
   }
 
   nav {
-    width: 97%;
+    width: 98%;
     opacity: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 17%;
+    padding: 0.5rem 15%;
     border-radius: 5rem;
     gap: 0rem;
   }
@@ -306,7 +315,7 @@ nav {
   .navlink {
     font-weight: 650;
     font-size: 1.2rem;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 3rem;
   }
 

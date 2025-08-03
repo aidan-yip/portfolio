@@ -98,6 +98,11 @@ h1 {
   font-weight: bold;
 }
 
+.border_bottom {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffffff33;
+}
+
 // Buttons
 
 button {
@@ -133,10 +138,29 @@ button:focus-visible {
   top: 3rem;
 }
 
+.nav_icon_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
 // desktop
 
 @media screen and (min-width: 50em) {
   .section {
     padding: 2rem;
+  }
+
+  .border_bottom {
+    padding-bottom: 0rem;
+    border-bottom: 0px solid #ffffff33;
+  }
+
+  .nav_icon_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }

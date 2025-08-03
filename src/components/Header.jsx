@@ -91,43 +91,47 @@ function Header() {
           <li>
             <Link
               to="/"
-              className="navlink"
+              className="navlink nav_icon_flex"
               style={{ cursor: "pointer" }}
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 HandleDeviceType();
               }}
             >
+              <img src="/icons/house.png" className="nav_icon"></img>
               Home
             </Link>
           </li>
           <li>
             <Link
               to="/#works_section"
-              className="navlink"
+              className="navlink nav_icon_flex"
               style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
+              <img src="/icons/works.png" className="nav_icon"></img>
               Works
             </Link>
           </li>
           <li>
             <Link
               to="/#design_section"
-              className="navlink"
+              className="navlink nav_icon_flex"
               style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
+              <img src="/icons/design.png" className="nav_icon"></img>
               Design
             </Link>
           </li>
-          <li>
+          <li className="border_bottom">
             <Link
               to="/about/#maincontent"
-              className="navlink"
+              className="navlink nav_icon_flex"
               style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
+              <img src="/icons/about.png" className="nav_icon"></img>
               About
             </Link>
           </li>

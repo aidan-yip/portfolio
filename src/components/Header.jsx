@@ -109,7 +109,10 @@ function Header() {
               style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
-              <img src="/icons/works.png" className="nav_icon"></img>
+              <img
+                src="/icons/works.png"
+                className="nav_icon icon_margin"
+              ></img>
               Works
             </Link>
           </li>
@@ -120,7 +123,10 @@ function Header() {
               style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
-              <img src="/icons/design.png" className="nav_icon"></img>
+              <img
+                src="/icons/design.png"
+                className="nav_icon icon_margin"
+              ></img>
               Design
             </Link>
           </li>

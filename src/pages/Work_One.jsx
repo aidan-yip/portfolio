@@ -28,14 +28,14 @@ function Work_One() {
             <a
               href="https://eclipse.aidanyip.com"
               className="project_link margin_right"
-              style={{ cursor: "pointer" }}
+              
             >
               Visit
             </a>
             <a
               href="https://github.com/aidan-yip/eclipse"
               className="project_link margin_right"
-              style={{ cursor: "pointer" }}
+              
             >
               GitHub
             </a>

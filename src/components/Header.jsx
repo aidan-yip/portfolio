@@ -70,7 +70,6 @@ function Header() {
             <Link
               to="/#hero_section"
               className="site_logo_link"
-              style={{ cursor: "pointer" }}
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 HandleDeviceType();
@@ -80,7 +79,6 @@ function Header() {
                 src="/icons/aidan_logo_clear.svg"
                 alt="Aidan's site logo"
                 id="site_logo"
-                style={{ cursor: "pointer" }}
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                   HandleDeviceType();
@@ -92,7 +90,6 @@ function Header() {
             <Link
               to="/"
               className="navlink nav_icon_flex"
-              style={{ cursor: "pointer" }}
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 HandleDeviceType();
@@ -106,7 +103,6 @@ function Header() {
             <Link
               to="/#works_section"
               className="navlink nav_icon_flex"
-              style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
               <img
@@ -120,7 +116,6 @@ function Header() {
             <Link
               to="/#design_section"
               className="navlink nav_icon_flex"
-              style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
               <img
@@ -130,11 +125,10 @@ function Header() {
               Design
             </Link>
           </li>
-          <li className="border_bottom">
+          <li className="padding_bottom">
             <Link
               to="/about/#maincontent"
               className="navlink nav_icon_flex"
-              style={{ cursor: "pointer" }}
               onClick={HandleDeviceType}
             >
               <img src="/icons/about.png" className="nav_icon"></img>
@@ -145,15 +139,10 @@ function Header() {
             <a
               href="https://www.linkedin.com/in/aidan-yip"
               className="social_logo"
-              style={{ cursor: "pointer" }}
             >
               <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
             </a>
-            <a
-              href="https://github.com/aidan-yip"
-              className="social_logo"
-              style={{ cursor: "pointer" }}
-            >
+            <a href="https://github.com/aidan-yip" className="social_logo">
               <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
             </a>
           </div>

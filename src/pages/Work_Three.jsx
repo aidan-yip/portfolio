@@ -28,7 +28,7 @@ function Work_Two() {
             <a
               href="https://woo-store.aidanyip.com"
               className="project_link margin_right"
-              style={{ cursor: "pointer" }}
+              
             >
               Visit
             </a>

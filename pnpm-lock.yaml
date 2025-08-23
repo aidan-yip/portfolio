@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@cursorify/react':
-        specifier: ^0.0.39
-        version: 0.0.39
       '@fancyapps/ui':
         specifier: ^5.0.36
         version: 5.0.36
@@ -165,9 +162,6 @@ packages:
   '@contentful/rich-text-types@16.8.5':
     resolution: {integrity: sha512-q18RJuJCOuYveGiCIjE5xLCQc5lZ3L2Qgxrlg/H2YEobDFqdtmklazRi1XwEWaK3tMg6yVXBzKKkQfLB4qW14A==}
     engines: {node: '>=6.0.0'}
-
-  '@cursorify/react@0.0.39':
-    resolution: {integrity: sha512-K4+Eb21hxypIb0KwU4qJS3STVBxO0x5iaYvWqW33ZZ8bpT8tpMIGgPFLyNrBbfkjARG9zncqCn0A5mGa+miTGA==}
 
   '@esbuild/aix-ppc64@0.25.8':
     resolution: {integrity: sha512-urAvrUedIqEiFR3FYSLTWQgLu5tb+m0qZw0NBEasUeo6wuqatkMDaRT+1uABiGXEu5vqgPd7FGE1BhsAIy9QVA==}
@@ -1448,8 +1442,6 @@ snapshots:
       json-pointer: 0.6.2
 
   '@contentful/rich-text-types@16.8.5': {}
-
-  '@cursorify/react@0.0.39': {}
 
   '@esbuild/aix-ppc64@0.25.8':
     optional: true

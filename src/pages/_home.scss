@@ -86,11 +86,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.3;
-}
-
-.vanta-canvas {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .clear_background_float {
@@ -151,7 +147,7 @@
   padding: 2rem;
   border-radius: 3rem;
   background: #5353532c;
-  border: 1px solid #48484885;
+  box-shadow: inset 1px 1px 0px #616161a8, inset -1px -1px 0px #616161a8;
   transition: all 0.3s;
 }
 
@@ -188,7 +184,7 @@
   padding: 0rem;
   border-radius: 3rem;
   background: #5353532c;
-  border: 1px solid #48484885;
+  box-shadow: inset 1px 1px 0px #616161a8, inset -1px -1px 0px #616161a8;
   transition: all 0.3s;
   grid-column: span 1;
 }

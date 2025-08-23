@@ -55,14 +55,14 @@ function About() {
                 <a
                   href="https://www.linkedin.com/in/aidan-yip"
                   className="social_logo"
-                  style={{ cursor: "pointer" }}
+                  
                 >
                   <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
                 </a>
                 <a
                   href="https://github.com/aidan-yip"
                   className="social_logo"
-                  style={{ cursor: "pointer" }}
+                  
                 >
                   <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
                 </a>
@@ -76,7 +76,7 @@ function About() {
               {/* <a
                 href="mailto:jamesayipt6@gmail.com"
                 className="project_link email_link"
-                style={{ cursor: "pointer" }}
+                
               >
                 Email Me
               </a> */}

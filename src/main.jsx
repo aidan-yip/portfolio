@@ -5,9 +5,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
-// cursorify
-import { CursorifyProvider } from "@cursorify/react";
-
 // scss
 import "./index.scss";
 import "./styles/_normalize_v2.scss";
@@ -33,11 +30,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Scroll_To_Section />
       <Header />
-      <CursorifyProvider breakpoint={997}>
-        <main id="maincontent">
-          <App />
-        </main>
-      </CursorifyProvider>
+
+      <main id="maincontent">
+        <App />
+      </main>
     </BrowserRouter>
   </React.StrictMode>
 );

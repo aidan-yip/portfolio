@@ -29,14 +29,14 @@ function Work_Two() {
             <a
               href="https://ocean-clip.myshopify.com"
               className="project_link margin_right"
-              style={{ cursor: "pointer" }}
+              
             >
               Visit
             </a>
             <a
               href="https://github.com/aidan-yip/ocean-clip-theme"
               className="project_link margin_right"
-              style={{ cursor: "pointer" }}
+              
             >
               GitHub
             </a>

@@ -109,32 +109,14 @@ nav {
   font-size: 3rem;
   border-radius: 50rem;
   color: #ffffff;
-  background-color: #1818184d;
-  box-shadow: inset 0px 0px 5px #878aaa7d, inset 1px 1px 1px #f4f5ffec,
-    inset -0.1px -0.1px 1px #ffffffc5;
+  background-color: #15333ec8;
+  box-shadow: inset 0.8px 0.8px 0px #afe1efec, inset -0.8px -0.8px 0px #afe1efec;
   border: none;
   backdrop-filter: blur(10px);
   // legacy webkit browser blur
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s;
   cursor: pointer;
-}
-
-#menu_button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff1a;
-  border-radius: 2rem;
-  backdrop-filter: blur(1px);
-  box-shadow: inset -10px -8px 0px -11px #ffffffca,
-    inset 0px -9px 0px -8px #ffffffd3;
-  opacity: 0.6;
-  z-index: -1;
-  filter: blur(2px) brightness(115%);
 }
 
 /* liquid glass code by https://www.tonnitools.com */

@@ -98,9 +98,8 @@ h1 {
   font-weight: bold;
 }
 
-.border_bottom {
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #ffffff33;
+.padding_bottom {
+  padding-bottom: 1rem;
 }
 
 // Buttons
@@ -156,7 +155,7 @@ button:focus-visible {
     padding: 2rem;
   }
 
-  .border_bottom {
+  .padding_bottom {
     padding-bottom: 0rem;
     border-bottom: none;
   }

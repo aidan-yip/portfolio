@@ -107,7 +107,7 @@ function Home() {
               <Link
                 to="/work-one"
                 className="project_link"
-                style={{ cursor: "pointer" }}
+                
               >
                 Learn More
               </Link>
@@ -124,7 +124,7 @@ function Home() {
               <Link
                 to="/work-two"
                 className="project_link"
-                style={{ cursor: "pointer" }}
+                
               >
                 Learn More
               </Link>
@@ -141,7 +141,7 @@ function Home() {
               <Link
                 to="/work-three"
                 className="project_link"
-                style={{ cursor: "pointer" }}
+                
               >
                 Learn More
               </Link>
@@ -172,7 +172,7 @@ function Home() {
                 href="/images/clouds_no_logo.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                style={{ cursor: "pointer" }}
+                
               >
                 <img
                   src="/images/clouds_no_logo.png"
@@ -192,7 +192,7 @@ function Home() {
                 href="/images/dawn.jpg"
                 className="gallery_open"
                 data-fancybox="gallery"
-                style={{ cursor: "pointer" }}
+                
               >
                 <img
                   src="/images/dawn.jpg"
@@ -212,7 +212,7 @@ function Home() {
                 href="/images/ocean_legacy_web.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                style={{ cursor: "pointer" }}
+                
               >
                 <img
                   src="/images/ocean_legacy_web.png"
@@ -234,7 +234,7 @@ function Home() {
                 href="/images/style_devices_clear.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                style={{ cursor: "pointer" }}
+                
               >
                 <img
                   src="/images/style_devices_clear.png"

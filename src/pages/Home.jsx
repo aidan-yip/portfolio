@@ -81,6 +81,17 @@ function Home() {
             Front-End Developer + Designer
           </p>
         </div>
+        <div id="social_links" className="text_center">
+          <a
+            href="https://www.linkedin.com/in/aidan-yip"
+            className="social_logo"
+          >
+            <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
+          </a>
+          <a href="https://github.com/aidan-yip" className="social_logo">
+            <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
+          </a>
+        </div>
         <p id="scroll_text">Scroll to see more</p>
       </section>
 
@@ -104,11 +115,7 @@ function Home() {
               <h2 className="project_title" tabIndex={0}>
                 Eclipse
               </h2>
-              <Link
-                to="/work-one"
-                className="project_link"
-                
-              >
+              <Link to="/work-one" className="project_link">
                 Learn More
               </Link>
             </div>
@@ -121,11 +128,7 @@ function Home() {
               <h2 className="project_title" tabIndex={0}>
                 Ocean Clip
               </h2>
-              <Link
-                to="/work-two"
-                className="project_link"
-                
-              >
+              <Link to="/work-two" className="project_link">
                 Learn More
               </Link>
             </div>
@@ -138,11 +141,7 @@ function Home() {
               <h2 className="project_title" tabIndex={0}>
                 Woo Store
               </h2>
-              <Link
-                to="/work-three"
-                className="project_link"
-                
-              >
+              <Link to="/work-three" className="project_link">
                 Learn More
               </Link>
             </div>
@@ -172,7 +171,6 @@ function Home() {
                 href="/images/clouds_no_logo.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                
               >
                 <img
                   src="/images/clouds_no_logo.png"
@@ -192,7 +190,6 @@ function Home() {
                 href="/images/dawn.jpg"
                 className="gallery_open"
                 data-fancybox="gallery"
-                
               >
                 <img
                   src="/images/dawn.jpg"
@@ -212,7 +209,6 @@ function Home() {
                 href="/images/ocean_legacy_web.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                
               >
                 <img
                   src="/images/ocean_legacy_web.png"
@@ -234,7 +230,6 @@ function Home() {
                 href="/images/style_devices_clear.png"
                 className="gallery_open"
                 data-fancybox="gallery"
-                
               >
                 <img
                   src="/images/style_devices_clear.png"

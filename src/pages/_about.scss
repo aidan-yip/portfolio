@@ -42,7 +42,7 @@
 
 .about_container {
   width: 100%;
-  max-width: variables.$max_width;
+  max-width: 1200px;
   margin: 4rem auto;
   @include mixins.section_background;
   border-radius: 2rem;

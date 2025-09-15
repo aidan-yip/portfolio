@@ -12,6 +12,7 @@ function Header() {
     const GlassContent = document.querySelector(".GlassContent");
     if (menuOpen) {
       if (nav && menuBtn) {
+        nav.style.transform = "translateY(-100%)";
         nav.style.opacity = "0";
         nav.style.pointerEvents = "none";
         menuBtn.style.transform = "rotate(0deg)";
@@ -27,6 +28,7 @@ function Header() {
       setMenuOpen(false);
     } else {
       if (nav && menuBtn) {
+        nav.style.transform = "translateY(0)";
         nav.style.opacity = "1";
         nav.style.pointerEvents = "all";
         nav.style.display = "flex";
@@ -69,21 +71,13 @@ function Header() {
           <li>
             <Link
               to="/#hero_section"
-              className="site_logo_link"
+              className="navlink_bold"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 HandleDeviceType();
               }}
             >
-              <img
-                src="/icons/aidan_logo_clear.svg"
-                alt="Aidan's site logo"
-                id="site_logo"
-                onClick={() => {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                  HandleDeviceType();
-                }}
-              />
+              Aidan Yip
             </Link>
           </li>
           <li>
@@ -95,7 +89,7 @@ function Header() {
                 HandleDeviceType();
               }}
             >
-              <img src="/icons/house.png" className="nav_icon"></img>
+              <img src="/icons/aidan_logo_clear.svg" className="nav_icon"></img>
               Home
             </Link>
           </li>
@@ -135,17 +129,6 @@ function Header() {
               About
             </Link>
           </li>
-          <div id="social_links">
-            <a
-              href="https://www.linkedin.com/in/aidan-yip"
-              className="social_logo"
-            >
-              <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
-            </a>
-            <a href="https://github.com/aidan-yip" className="social_logo">
-              <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
-            </a>
-          </div>
         </div>
         <div className="GlassMaterial">
           <div className="GlassEdgeReflection"></div>

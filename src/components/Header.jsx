@@ -64,7 +64,7 @@ function Header() {
         Skip to main content
       </a>
       <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}>
-        +
+        {menuOpen ? "+" : "="}
       </button>
       <nav className="GlassContainer" aria-expanded={menuOpen}>
         <div className="GlassContent">

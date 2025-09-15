@@ -41,17 +41,19 @@ nav {
   animation: gentleShake 0.5s ease-in-out;
 }
 
-.site_logo_link {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  animation: gentleShake 0.5s ease-in-out;
+.navlink_bold {
+  font-weight: 650;
+  font-size: 1.5rem;
+  padding: 0.7rem 0.6rem;
+  border-radius: 5rem;
 }
 
 .navlink {
-  font-weight: 650;
+  font-weight: 550;
   font-size: 1.5rem;
+  padding: 0.7rem 0.6rem;
+  border-radius: 5rem;
+  // background: #1b1b1b43;
   animation: popInBouncy 0.5s ease-in-out;
 }
 
@@ -59,6 +61,12 @@ nav {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.no_link_background {
+  background: none;
+  border: none;
 }
 
 .social_logo {
@@ -149,7 +157,8 @@ nav {
   align-items: left;
   justify-content: space-between;
   width: 100%;
-  height: 22rem;
+  height: 22.5rem;
+  margin-top: 0rem;
   position: relative;
   z-index: 100;
   border-radius: var(--corner-radius);
@@ -269,7 +278,7 @@ nav {
 
 // desktop
 
-@media (min-width: 50em) {
+@media (min-width: 60em) {
   header {
     top: 0.7rem;
   }
@@ -279,12 +288,12 @@ nav {
   }
 
   nav {
-    width: 98%;
+    width: 75%;
     opacity: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 15%;
+    padding: 0.3rem 1%;
     border-radius: 5rem;
     gap: 0rem;
   }
@@ -294,10 +303,10 @@ nav {
   }
 
   .navlink {
-    font-weight: 650;
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem;
     border-radius: 3rem;
+    // background: none;
   }
 
   .navlink:hover {
@@ -314,6 +323,7 @@ nav {
     width: 1.2rem;
     height: 1.2rem;
     margin-right: 0.5rem;
+    margin-left: 0rem;
   }
 
   .social_logo:hover {
@@ -326,6 +336,7 @@ nav {
     flex-direction: row;
     align-items: center;
     position: relative;
+    margin-top: 0rem;
     border-radius: var(--corner-radius);
     pointer-events: auto;
   }

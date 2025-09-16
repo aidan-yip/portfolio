@@ -58,8 +58,8 @@ nav {
 }
 
 .nav_icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -278,7 +278,7 @@ nav {
 
 // desktop
 
-@media (min-width: 60em) {
+@media (min-width: 50em) {
   header {
     top: 0.7rem;
   }
@@ -311,9 +311,10 @@ nav {
 
   .navlink_bold {
     font-weight: 650;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.7rem 0.6rem;
     border-radius: 5rem;
+    text-wrap: nowrap;
   }
 
   .navlink:hover {

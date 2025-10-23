@@ -39,7 +39,7 @@ function About() {
         <div className="about_container">
           <div className="about_info">
             <img
-              src="/images/ade.png"
+              src="/images/ade.jpeg"
               alt="Picture of Aidan Yip"
               id="ade_img_large"
               tabIndex={0}
@@ -73,13 +73,6 @@ function About() {
                 with a distinct advantage in web design and a comprehensive
                 understanding of color science and theory.
               </p>
-              {/* <a
-                href="mailto:jamesayipt6@gmail.com"
-                className="project_link email_link"
-                
-              >
-                Email Me
-              </a> */}
             </article>
           </div>
 

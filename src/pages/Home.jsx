@@ -116,7 +116,7 @@ function Home() {
                 Eclipse
               </h2>
               <p className="work_info">Discover the latest films.</p>
-              <Link to="/work-one" className="project_link">
+              <Link to="/work-one" className="project_link margin_top_small">
                 Learn More
               </Link>
             </div>
@@ -130,7 +130,7 @@ function Home() {
                 Ocean Clip
               </h2>
               <p className="work_info">Shopify-Powered E-Commerce</p>
-              <Link to="/work-two" className="project_link">
+              <Link to="/work-two" className="project_link margin_top_small">
                 Learn More
               </Link>
             </div>
@@ -144,7 +144,7 @@ function Home() {
                 Woo Store
               </h2>
               <p className="work_info">Find Your Fit. Woo Store.</p>
-              <Link to="/work-three" className="project_link">
+              <Link to="/work-three" className="project_link margin_top_small">
                 Learn More
               </Link>
             </div>

@@ -115,7 +115,7 @@ function Home() {
               <h2 className="project_title" tabIndex={0}>
                 Eclipse
               </h2>
-              <p className="work_info">Discover the latest films.</p>
+              <p className="work_info">Discover The Latest Films.</p>
               <Link to="/work-one" className="project_link margin_top_small">
                 Learn More
               </Link>
@@ -143,7 +143,7 @@ function Home() {
               <h2 className="project_title" tabIndex={0}>
                 Woo Store
               </h2>
-              <p className="work_info">Find Your Fit. Woo Store.</p>
+              <p className="work_info">Find Your Fit. Your Way.</p>
               <Link to="/work-three" className="project_link margin_top_small">
                 Learn More
               </Link>

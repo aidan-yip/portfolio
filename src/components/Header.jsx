@@ -18,7 +18,8 @@ function Header() {
         menuBtn.style.transform = "rotate(0deg)";
         menuBtn.style.color = "#ffffff";
         menuBtn.style.backgroundColor = "#15333ec8";
-        menuBtn.style.boxShadow = "inset 0.8px 0.8px 0px #afe1efec, inset -0.8px -0.8px 0px #afe1efec";
+        menuBtn.style.boxShadow =
+          "inset 0.8px 0.8px 0px #afe1efec, inset -0.8px -0.8px 0px #afe1efec";
         menuBtn.style.top = "0.2rem";
         menuBtn.style.right = "0.7rem";
       }
@@ -40,7 +41,8 @@ function Header() {
         menuBtn.style.transform = "rotate(45deg)";
         menuBtn.style.color = "red";
         menuBtn.style.backgroundColor = "#3e1515c8";
-        menuBtn.style.boxShadow = "inset 0.8px 0px 0px #efafafec, inset -0.8px -0px 0px #efafafec"
+        menuBtn.style.boxShadow =
+          "inset 0.8px 0px 0px #efafafec, inset -0.8px -0px 0px #efafafec";
         menuBtn.style.top = "1rem";
         menuBtn.style.right = "1.7rem";
       }
@@ -67,23 +69,20 @@ function Header() {
       <a href="#maincontent" id="skip_to_main">
         Skip to main content
       </a>
+      <Link
+        to="/#hero_section"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          HandleDeviceType();
+        }}
+      >
+        <img src="/icons/aidan_logo_clearv7.png" id="site_logo"></img>
+      </Link>
       <button id="menu_button" aria-label="Menu" onClick={ToggleMenu}>
         {menuOpen ? "+" : "="}
       </button>
       <nav className="GlassContainer" aria-expanded={menuOpen}>
         <div className="GlassContent">
-          {/* <li>
-            <Link
-              to="/#hero_section"
-              className="navlink_bold"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-                HandleDeviceType();
-              }}
-            >
-              <img src="/icons/aidan_logo_clear.svg" className="nav_icon"></img>
-            </Link>
-          </li> */}
           <li>
             <Link
               to="/"

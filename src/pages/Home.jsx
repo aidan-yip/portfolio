@@ -68,12 +68,15 @@ function Home() {
           loop
           className="hero_video"
         ></video>
+
         <img
-          src="/icons/aidan_logo_clearv6.png"
+          src="/images/web-macbook.png"
           alt="Aidan's site logo"
           id="site_logo_large"
         />
+        
         <div>
+          
           {/* subtext */}
           <div className="flex_subheader">
             <p id="hero_subheader" tabIndex={0}>
@@ -91,11 +94,12 @@ function Home() {
               </a>
             </div>
           </div>
-          {/* subtext */}
+
+           {/* main header */}
           <h1 id="hero_header" tabIndex={0}>
             Hello, I'm Aidan!
           </h1>
-          
+
         </div>
         <p id="scroll_text">Scroll to see more</p>
       </section>

@@ -17,6 +17,8 @@ function Header() {
         nav.style.pointerEvents = "none";
         menuBtn.style.transform = "rotate(0deg)";
         menuBtn.style.color = "#ffffff";
+        menuBtn.style.backgroundColor = "#15333ec8";
+        menuBtn.style.boxShadow = "inset 0.8px 0.8px 0px #afe1efec, inset -0.8px -0.8px 0px #afe1efec";
         menuBtn.style.top = "0.2rem";
         menuBtn.style.right = "0.7rem";
       }
@@ -37,6 +39,8 @@ function Header() {
         GlassContent.style.pointerEvents = "all";
         menuBtn.style.transform = "rotate(45deg)";
         menuBtn.style.color = "red";
+        menuBtn.style.backgroundColor = "#3e1515c8";
+        menuBtn.style.boxShadow = "inset 0.8px 0px 0px #efafafec, inset -0.8px -0px 0px #efafafec"
         menuBtn.style.top = "1rem";
         menuBtn.style.right = "1.7rem";
       }
@@ -68,7 +72,7 @@ function Header() {
       </button>
       <nav className="GlassContainer" aria-expanded={menuOpen}>
         <div className="GlassContent">
-          <li>
+          {/* <li>
             <Link
               to="/#hero_section"
               className="navlink_bold"
@@ -77,9 +81,9 @@ function Header() {
                 HandleDeviceType();
               }}
             >
-              Aidan Yip
+              <img src="/icons/aidan_logo_clear.svg" className="nav_icon"></img>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/"
@@ -89,7 +93,7 @@ function Header() {
                 HandleDeviceType();
               }}
             >
-              <img src="/icons/aidan_logo_clear.svg" className="nav_icon"></img>
+              <img src="/icons/house.png" className="nav_icon"></img>
               Home
             </Link>
           </li>
@@ -119,7 +123,7 @@ function Header() {
               Design
             </Link>
           </li>
-          <li className="padding_bottom">
+          <li>
             <Link
               to="/about/#maincontent"
               className="navlink nav_icon_flex"

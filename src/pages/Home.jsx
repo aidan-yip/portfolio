@@ -69,28 +69,33 @@ function Home() {
           className="hero_video"
         ></video>
         <img
-          src="/icons/aidan_logo_clear.svg"
+          src="/icons/aidan_logo_clearv4.png"
           alt="Aidan's site logo"
           id="site_logo_large"
         />
         <div>
+          {/* subtext */}
+          <div className="flex_subheader">
+            <p id="hero_subheader" tabIndex={0}>
+              Front-End Developer + Designer
+            </p>
+            <div id="social_links" className="text_center">
+              <a
+                href="https://www.linkedin.com/in/aidan-yip"
+                className="social_logo"
+              >
+                <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
+              </a>
+              <a href="https://github.com/aidan-yip" className="social_logo">
+                <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
+              </a>
+            </div>
+          </div>
+          {/* subtext */}
           <h1 id="hero_header" tabIndex={0}>
-            Hey There, I'm Aidan!
+            Hello, I'm Aidan!
           </h1>
-          <p id="hero_subheader" tabIndex={0}>
-            Front-End Developer + Designer
-          </p>
-        </div>
-        <div id="social_links" className="text_center">
-          <a
-            href="https://www.linkedin.com/in/aidan-yip"
-            className="social_logo"
-          >
-            <img src="/icons/InBug-White.png" alt="Visit LinkedIn" />
-          </a>
-          <a href="https://github.com/aidan-yip" className="social_logo">
-            <img src="/icons/github-mark-white.svg" alt="Visit GitHub" />
-          </a>
+          
         </div>
         <p id="scroll_text">Scroll to see more</p>
       </section>

@@ -17,15 +17,15 @@
 #hero_header {
   color: #f2f2f2;
   text-shadow: 0 0 25px #ffffffcd;
-  margin-top: -4rem;
-  font-size: 1.8em;
+  margin-top: 0rem;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
 #hero_subheader {
   color: #f2f2f2;
   text-shadow: 0 0 25px #ffffffcd;
-  margin-top: 1rem;
+  margin-top: 0rem;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.1;
@@ -34,9 +34,10 @@
 #site_logo_large {
   width: 14rem;
   height: 14rem;
-  margin-top: -15rem;
+  margin-top: -5rem;
   pointer-events: none;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+  // transform: scale(1.3);
 }
 
 #scroll_text {
@@ -331,7 +332,7 @@
   }
 
   #hero_header {
-    font-size: 3.2em;
+    font-size: 4em;
   }
 
   #hero_subheader {
@@ -341,8 +342,8 @@
   #site_logo_large {
     width: 20rem;
     height: 20rem;
-    margin-top: -6rem;
-    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 
   .project_link {

@@ -79,7 +79,7 @@ nav {
 #social_links {
   width: 4.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   animation: gentleShake 0.5s ease-in-out;
 }
 
@@ -157,7 +157,8 @@ nav {
   align-items: left;
   justify-content: space-between;
   width: 100%;
-  height: 22.5rem;
+  height: 20rem;
+  padding: 1rem 0rem;
   margin-top: 0rem;
   position: relative;
   z-index: 100;
@@ -280,7 +281,7 @@ nav {
 
 @media (min-width: 50em) {
   header {
-    top: 0.7rem;
+    top: 1.2rem;
   }
 
   #menu_button {
@@ -288,7 +289,7 @@ nav {
   }
 
   nav {
-    width: 75%;
+    width: 55%;
     opacity: 1;
     display: flex;
     flex-direction: row;
@@ -342,6 +343,7 @@ nav {
     height: 3.2rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     margin-top: 0rem;

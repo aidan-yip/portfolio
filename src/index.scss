@@ -152,6 +152,15 @@ button:focus-visible {
   margin-top: 0.1rem;
 }
 
+.flex_subheader {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
 // desktop
 
 @media screen and (min-width: 50em) {
@@ -169,5 +178,13 @@ button:focus-visible {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }

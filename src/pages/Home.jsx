@@ -69,7 +69,7 @@ function Home() {
           className="hero_video"
         ></video>
         <img
-          src="/icons/aidan_logo_clearv4.png"
+          src="/icons/aidan_logo_clearv6.png"
           alt="Aidan's site logo"
           id="site_logo_large"
         />

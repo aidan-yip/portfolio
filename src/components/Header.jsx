@@ -17,9 +17,9 @@ function Header() {
         nav.style.pointerEvents = "none";
         menuBtn.style.transform = "rotate(0deg)";
         menuBtn.style.color = "#ffffff";
-        menuBtn.style.backgroundColor = "#15333ec8";
+        menuBtn.style.backgroundColor = "#00274c";
         menuBtn.style.boxShadow =
-          "inset 0.8px 0.8px 0px #afe1efec, inset -0.8px -0.8px 0px #afe1efec";
+          "inset 0.8px 0.8px 0px #49a7ff, inset -0.8px -0.8px 0px #49a7ff";
         menuBtn.style.top = "0.2rem";
         menuBtn.style.right = "0.7rem";
       }

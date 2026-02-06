@@ -123,6 +123,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.f-button {
+  border-radius: 3rem;
+  margin: 0.2rem;
+}
+
 // utility classes
 
 .margin_top {
